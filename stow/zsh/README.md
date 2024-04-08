@@ -14,3 +14,6 @@ mappings are available:
 - ALT+c to navigate into a sub-directory
 
 zoxide and starship must also be installed.
+
+This configuration also sets some broot mappings, see the broot directory of
+this repository.
