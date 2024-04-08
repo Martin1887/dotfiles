@@ -4,6 +4,7 @@ return {
     dependencies = {
       "nvim-telescope/telescope-fzf-native.nvim",
       "debugloop/telescope-undo.nvim",
+      "AckslD/nvim-neoclip.lua",
     },
     build = "make",
     opts = {
@@ -25,6 +26,7 @@ return {
         telescope.load_extension("projects")
         telescope.load_extension("undo")
         telescope.load_extension("persisted")
+        telescope.load_extension("neoclip")
       end)
     end,
     keys = {

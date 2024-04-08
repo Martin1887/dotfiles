@@ -7,6 +7,7 @@ This configuration adds some extensions and customizations:
 
 - `persisted.nvim` instead of `persistence` for better sessions management
 tracking git branches and with Telescope list.
+- neovim-neoclip for friendly clipboard and macros history
 - `<C-q>` to close window and focus.nvim:
   - `<C-.>` to split nicely (golden ratio).
   - `<C-h/j/k/l>` to move to window in direction or create it if it does not
@@ -34,7 +35,8 @@ pick buffer by letter.
 - Telescope-fzf-native.
 - Telescope projects with `<space>p` (and project extra).
 - Telescope LaTeX and math symbols with `<space>tl`.
-- mellifluous and darker and warmer melange (default) colorschemes.
+- mellifluous (disabled by default) and darker and warmer melange (default)
+  colorschemes.
 - nvim-scrollbar.
 - Minimal notifications in nvim-notify.
 - vim-illuminate.
@@ -49,8 +51,9 @@ file history view in new tab.
 - vim-repeat (better dot operator).
 - splitjoin.vim (`gS` to split and `gJ` to join).
 - vim-matchup for better `%`.
-- `https://github.com/hiphish/rainbow-delimiters.nvim` for colorized parenthesis.
+- `https://github.com/hiphish/rainbow-delimiters.nvim` for colorized parenthesis with colors set
+  as melangeDarkWarm theme.
+- indent-blankline customized with scope and colorful indent (dimmed) and scope lines.
 - boole to cycle among boolean values (`<C-x>` is changed to `<C-z>`).
 - tint to tint inactive windows.
-- FeMaco for float buffers in embedded other languages code blocks with `<leader>ce`.
 - nvim-spider for subword and skipping punctuation `w,e,b,ge` movements.

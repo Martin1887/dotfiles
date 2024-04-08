@@ -1,6 +1,4 @@
 return {
-  -- unnecessary using C-arrows and error with lspsaga_finder
-  --{ "simeji/winresizer" },
   { "simnalamburt/vim-mundo" },
   -- new selection targets, like parentheses
   { "wellle/targets.vim" },
@@ -93,12 +91,6 @@ return {
           decrement = "<C-z>",
         },
       })
-    end,
-  },
-  {
-    "AckslD/nvim-FeMaco.lua",
-    config = function()
-      require("femaco").setup()
     end,
   },
   {

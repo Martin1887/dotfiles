@@ -2,8 +2,11 @@ return {
   {
     "https://github.com/Martin1887/melangeDarkerWarm-nvim",
   },
+  { "folke/tokyonight.nvim", enabled = false },
+  { "catppuccin/nvim", name = "catppuccin", enabled = false },
   {
     "ramojus/mellifluous.nvim",
+    enabled = false,
     dependencies = {
       { "rktjmp/lush.nvim" },
     },

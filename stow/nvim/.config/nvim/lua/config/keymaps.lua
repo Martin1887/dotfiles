@@ -53,6 +53,7 @@ map(
   "<cmd>BufferOrderByBufferNumber<cr>",
   { desc = "Sort buffers by buffer number", silent = true, noremap = true }
 )
+map("n", "<leader>bsn", "<cmd>BufferOrderByName<cr>", { desc = "Sort buffers by name", silent = true, noremap = true })
 map(
   "n",
   "<leader>bsd",
@@ -101,6 +102,48 @@ map(
 -- No neck pain (zen mode like)
 map("n", "<leader>uz", "<cmd>NoNeckPain<cr>", { desc = "No neck pain (zen mode)", silent = true, noremap = true })
 
+-- GitGutter additional keymaps
+map("n", "[h", "<cmd>GitGutterPrevHunk<cr>", { desc = "Previous hunk (git change)", silent = true, noremap = true })
+map("n", "]h", "<cmd>GitGutterNextHunk<cr>", { desc = "Next hunk (git change)", silent = true, noremap = true })
+
+-- nvim-neoclip
+map(
+  "n",
+  "<leader>yy",
+  "<cmd>Telescope neoclip<cr>",
+  { desc = "Telescope neoclip (yank history)", silent = true, noremap = true }
+)
+map(
+  "n",
+  "<leader>m",
+  "<cmd>Telescope macroscope<cr>",
+  { desc = "Telescope macroscope (neoclip macros history)", silent = true, noremap = true }
+)
+map(
+  "n",
+  "<leader>yo",
+  "<cmd>:lua require('neoclip').start()<cr>",
+  { desc = "Telescope neoclip On", silent = true, noremap = true }
+)
+map(
+  "n",
+  "<leader>yf",
+  "<cmd>:lua require('neoclip').stop()<cr>",
+  { desc = "Telescope neoclip oFF", silent = true, noremap = true }
+)
+map(
+  "n",
+  "<leader>yt",
+  "<cmd>:lua require('neoclip').toggle()<cr>",
+  { desc = "Telescope neoclip Toggle", silent = true, noremap = true }
+)
+map(
+  "n",
+  "<leader>yc",
+  "<cmd>:lua require('neoclip').clear_history()<cr>",
+  { desc = "Telescope neoclip Clear history", silent = true, noremap = true }
+)
+
 -- projects
 map(
   "n",
@@ -118,9 +161,6 @@ map(
 )
 -- Telescope undo
 map("n", "<leader>tu", "<cmd>Telescope undo<cr>", { desc = "Telescope undo", silent = true, noremap = true })
-
--- FeMaco
-map("n", "<leader>ce", "<cmd>FeMaco<cr>", { desc = "FeMaco float code editing", silent = true, noremap = true })
 
 -- rustaceanvim
 map("n", "<leader>rd", "<cmd>RustLsp debuggables<cr>", { desc = "Rust debuggables", silent = true, noremap = true })
