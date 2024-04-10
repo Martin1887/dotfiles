@@ -67,7 +67,7 @@ return {
       end)
 
       vim.g.rainbow_delimiters = { highlight = delims_highlight }
-      opts.scope = { enabled = true, highlight = highlight }
+      opts.scope = { enabled = true, highlight = highlight, show_start = false, show_end = false }
       opts.indent = { highlight = indent_highlight }
       hooks.register(hooks.type.SCOPE_HIGHLIGHT, hooks.builtin.scope_highlight_from_extmark)
     end,
