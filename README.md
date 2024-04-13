@@ -23,36 +23,77 @@ make delete
 
 # home-manager and NixOS
 
-## Add this repo as a submodule of your config repo (optional but recommended)
+Nix flakes do not handle git submodules well, so the best manner to
+include this repository is as an additional non-flake input:
 
-The NixOS configuration is recommended to be in a git repository as a flake.
-Using a git repository the best manner of using this repository is including it
-as a submodule, so it is inside your repository and you can update it:
-
+```nix
+inputs = {
+  ...
+  dotfiles = {
+    url = "github:Martin1887/dotfiles";
+    flake = false;
+  };
 ```
-git submodule add https://github.com/Martin1887/dotfiles
+
+Then, you can pass the input to home-manager as a `extraSpecialArg`.
+For example, if using home-manager as a module:
+
+```nix
+outputs = { self, nixpkgs, home-manager, dotfiles, ...}:
+  nixosConfigurations = {
+    "myhost" = nixpkgs.lib.nixosSystem {
+      ...
+      modules = [
+        ...
+        home-manager.nixosModules.home-manager {
+          ...
+          home-manager.extraSpecialArgs = {
+            dotfiles = dotfiles;
+          };
+        }
+      ];
+    };
+  };
+  ...
+};
 ```
 
-Usually you would want to do it inside the same directory of your home-manager
-files.
+To link the files from dotfiles you can use `home.file` as follows:
 
-Please read the documentation about git submodules at
-https://git-scm.com/book/en/v2/Git-Tools-Submodules
-
-## Referencing the configuration files in home-manager
-
-To copy the files from the submodule you can use `home.file` as follows:
-
-```
+```nix
 home.file."<file>" = {
-    source = ./<path_to_submodule>/stow/<program>/<file>;
+    source = "${dotfiles}/stow/<program>/<file>";
 };
 ```
 
 And for subtrees of `.config` something like:
 
-```
+```nix
 xdg.configFile."<program>" = {
-    source = ./<path_to_submodule>/stow/<program>/.config/<program>;
+    source = "${dotfiles}/stow/<program>/.config/<program>";
     recursive = true;
 };
+```
+
+A handy function to automatically read all files in the `stow`
+subdirectory of the dotfiles repository with low priority (to
+give more priority to your Nix configurations) is:
+
+```nix
+{ lib, dotfiles, ... }:
+
+{
+  home.file = with builtins; with lib; pipe "${dotfiles}/stow" [
+    filesystem.listFilesRecursive
+    (filter (file: ! hasSuffix ".nix" file))
+    (filter (file: ! hasSuffix "README.md" file))
+    (map (file: {
+      # remove the prefix and the first folder after that (application name)
+      name = unsafeDiscardStringContext (concatStringsSep "/" (tail (splitString "/" (removePrefix "${dotfiles}/stow/" (toString file)))));
+      value = { source = mkOverride 2000 file; };
+    }))
+    listToAttrs
+  ];
+}
+```
+
