@@ -52,10 +52,10 @@ return {
               motherTongue = "es",
             },
             ltex_ls = {
-              path = "/usr/local/bin/ltex-ls",
+              path = "ltex-ls",
             },
             java = {
-              path = "/bin/java",
+              path = "java",
             },
             completionEnabled = true,
             -- "edit", "save" or "manual"
@@ -64,6 +64,14 @@ return {
         },
       })
     end,
+  },
+  {
+    "williamboman/mason.nvim",
+      enabled = false,
+  },
+  {
+    "williamboman/mason-lspconfig.nvim",
+      enabled = false,
   },
   {
     "neovim/nvim-lspconfig",
