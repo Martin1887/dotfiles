@@ -32,12 +32,12 @@ return {
     keys = {
       {
         "<leader>f.f",
-        require("lazyvim.util").telescope("files", { hidden = true, noignore = true }),
+        LazyVim.pick("auto", { hidden = true, noignore = true, root = true }),
         desc = "Find Hidden Files (root dir)",
       },
       {
         "<leader>f.F",
-        require("lazyvim.util").telescope("files", { hidden = true, noignore = true, cwd = false }),
+        LazyVim.pick("auto", { hidden = true, noignore = true, root = false }),
         desc = "Find Hidden Files (cwd dir)",
       },
     },

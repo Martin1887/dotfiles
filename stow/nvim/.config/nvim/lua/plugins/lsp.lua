@@ -2,17 +2,6 @@ require("lint").linters.codespell.args = { "-L crate,Crate,crates,Crates", "-" }
 
 return {
   {
-    "glepnir/lspsaga.nvim",
-    event = "BufRead",
-    config = function()
-      require("lspsaga").setup({})
-    end,
-    dependencies = {
-      { "nvim-tree/nvim-web-devicons" },
-      { "nvim-treesitter/nvim-treesitter" },
-    },
-  },
-  {
     "iamcco/markdown-preview.nvim",
     enabled = false,
   },

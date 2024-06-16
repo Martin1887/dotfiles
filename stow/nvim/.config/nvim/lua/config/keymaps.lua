@@ -196,12 +196,6 @@ map("n", "<leader>rjl", "<cmd>RustLsp joinLines<cr>", { desc = "Rust joinLines",
 map("n", "<leader>rcg", "<cmd>RustLsp crateGraph<cr>", { desc = "Rust crateGraph", silent = true, noremap = true })
 map("n", "<leader>rst", "<cmd>RustLsp syntaxTree<cr>", { desc = "Rust syntaxTree", silent = true, noremap = true })
 
--- lspsaga
-map("n", "<leader>cs", "<cmd>Lspsaga finder<cr>", { desc = "lsp_finder", silent = true, noremap = true })
-map("n", "<leader>o", "<cmd>Lspsaga outline<cr>", { desc = "outline", silent = true, noremap = true })
-map("n", "<leader>ci", "<cmd>Lspsaga incoming_calls<cr>", { desc = "incoming calls", silent = true, noremap = true })
-map("n", "<leader>co", "<cmd>Lspsaga outgoing_calls<cr>", { desc = "Outgoing calls", silent = true, noremap = true })
-
 -- dap and dap-ui
 map(
   "n",
