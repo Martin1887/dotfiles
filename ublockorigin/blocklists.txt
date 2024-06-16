@@ -1,0 +1,91 @@
+Based on https://lushka.al/blocklist/ (CC BY-NC-SA 4.0):
+
+# Advanced (Blocks annoyances)
+
+https://secure.fanboy.co.nz/fanboy-cookiemonster.txt
+https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt
+https://filters.adtidy.org/extension/ublock/filters/14.txt
+https://filters.adtidy.org/extension/ublock/filters/4.txt
+https://fanboy.co.nz/fanboy-annoyance.txt
+https://filters.adtidy.org/extension/ublock/filters/3.txt
+https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt
+
+
+Stuff may more likely break if you enable these lists:
+
+    Anti-Facebook List: https://fanboy.co.nz/fanboy-antifacebook.txt
+    Fanboy’s Social Blocking List: https://fanboy.co.nz/fanboy-social.txt
+
+Additional lists:
+
+    Google Fonts Blocker by @theel0ja: https://raw.githubusercontent.com/theel0ja/CrapBlock/master/block-googlefonts.txt
+
+
+
+My personal lists
+#
+Built in (6/7)#
+
+    uBlock filters
+    uBlock filters – Annoyances
+    uBlock filters – Badware risks
+    uBlock filters – Privacy
+    uBlock filters – Resource abuse
+    uBlock filters – Unbreak
+
+Ads section (3/4)#
+
+    Adblock Warning Removal List
+    Adguard Base Filters
+    EasyList
+
+Privacy (3/3)#
+
+    Adguard Spyware Filters
+    EasyPrivacy
+    Fanboy’s Enhanced Tracking List
+
+Malware Domains (3/4)#
+
+    Malware Domain List
+    Malware domains
+    Spam404
+
+Annoyances (5/6)#
+
+    AdGuard Annoyances filter
+    AdGuard Social Media filter
+    Anti-Facebook List
+    Fanboy’s Cookie List
+    Fanboy’s Annoyance List
+
+Multipurpose (2/4)#
+
+    Dan Pollock’s hosts file
+    Peter Lowe’s Ad and tracking server list
+
+Custom (21)#
+
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Custom%20cursors'%20List.txt
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitchEvenMorePureViewingExperience.txt
+https://raw.githubusercontent.com/AnXh3L0/blocklist/master/personal.txt
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/KnowYourMemePureBrowsingExperience.txt
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WikiaPureBrowsingExperience.txt
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/RickrollLinkIdentifier.txt
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyingBannersAndOverlays.txt
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/SocialShareList.txt
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitchPureViewingExperience.txt
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-IMDB%20List.txt
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAmazonListForTwitch.txt
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/YouTubeYetEvenMorePureVideoExperience.txt
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Android%20Scum%20Class%20%E2%80%94%20Fake%20notification%20counters.txt
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt
+https://raw.githubusercontent.com/theel0ja/CrapBlock/master/block-googlefonts.txt
+https://raw.githubusercontent.com/theel0ja/CrapBlock/master/crapblock-annoyances.txt
+https://www.i-dont-care-about-cookies.eu/abp/
+
+
