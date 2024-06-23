@@ -63,6 +63,10 @@ return {
       enabled = false,
   },
   {
+    "jay-babu/mason-nvim-dap.nvim",
+      enabled = false,
+  },
+  {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
