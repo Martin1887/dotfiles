@@ -7,6 +7,7 @@ This configuration adds some extensions and customizations:
 
 - `persisted.nvim` instead of `persistence` for better sessions management
 tracking git branches and with Telescope list.
+- gitui extra (instead of lazyvim).
 - neovim-neoclip for friendly clipboard and macros history
 - `<C-q>` to close window and focus.nvim:
   - `<C-.>` to split nicely (golden ratio).
