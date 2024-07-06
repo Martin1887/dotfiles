@@ -24,7 +24,7 @@ pick buffer by letter.
 - Legendary command-palette-like search with `<space>P`.
 - no-neck-pain (zen mode like) with width=150 using `<space>uz`.
 - flash (the new LazyVim default) has replaced hop.nvim (it was replacing the original defaults leap and flit).
-- Rust, clangd, Python, Python-semshi, black, markdown
+- Rust, clangd, Python, black, markdown
 (with markdown-preview disabled) and tex extras.
 - DAP, DAPUI and nvim-dap-virtual-text with mappings (DAP core extra).
 - vimtex and texlab (with cktex enabled on save) for LaTeX.

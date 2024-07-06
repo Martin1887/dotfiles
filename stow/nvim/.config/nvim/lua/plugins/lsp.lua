@@ -97,6 +97,14 @@ return {
           },
         },
       },
+      setup = {
+        [ruff] = function()
+          LazyVim.lsp.on_attach(function(client, _)
+            -- No disable hover in favor of Pyright
+            client.server_capabilities.hoverProvider = true
+          end, ruff)
+        end,
+      }
     },
   },
   {

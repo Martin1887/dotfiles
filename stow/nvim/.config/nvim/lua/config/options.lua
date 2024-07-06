@@ -21,8 +21,10 @@ vim.g.FerretMap = 0
 -- this is needed to avoid focus.nvim error on loading sessions
 vim.go.winminwidth = 0
 
--- basedpyright instead of pyright
-vim.g.lazyvim_python_lsp = "basedpyright"
+-- ruff instead of pyright or basedpyright, it is not a supported value
+-- but nwither are loaded in this way
+vim.g.lazyvim_python_lsp = "ruff"
+vim.g.lazyvim_python_ruff = "ruff"
 
 -- Neotree icons for diagnostic errors
 local icons = require("lazyvim.config").icons
