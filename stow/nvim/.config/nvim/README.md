@@ -15,6 +15,7 @@ tracking git branches and with Telescope list.
     exist.
   - `<C-m>` to maximize/set equal size of windows.
   - `<C-,>` for golden ratio (usually used after `<C-m>`).
+- colorful-winsep.nvim for a colorful border in the active window.
 - neo-tree source selector winbar and mappings, navigation with
 `h` and `l` and modified untracked files highlight.
 - Customized lualine with words count, lines and count, encoding and filetype.

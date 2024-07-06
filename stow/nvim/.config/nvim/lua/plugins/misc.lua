@@ -116,4 +116,9 @@ return {
       { "<C-,>", "<cmd>FocusAutoresize<cr>", desc = "Focus Autoresize as gold-ratio" },
     },
   },
+  {
+    "nvim-zh/colorful-winsep.nvim",
+    config = true,
+    event = { "WinLeave" },
+  }
 }
