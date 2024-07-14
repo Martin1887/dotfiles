@@ -5,7 +5,7 @@
 local opt = vim.opt
 
 opt.termguicolors = true
--- Replace `~` by space as enf-of-buffer
+-- Replace `~` by space as end-of-buffer
 opt.fcs = "eob: "
 
 -- set tab width to 4 spaces
