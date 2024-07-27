@@ -50,6 +50,23 @@ return {
     opts = {
       width = 150,
     },
+    keys = {
+      { "<leader>un", "<cmd>NoNeckPain<cr>", desc = "No neck pain (zen-like mode)" },
+    },
+  },
+  {
+    "folke/zen-mode.nvim",
+    opts = {
+      plugins = {
+        options = {
+          laststatus = 3,
+        },
+        twilight = { enabled = false },
+      },
+    },
+    keys = {
+      { "<leader>uz", "<cmd>ZenMode<cr>", desc = "Zen mode" },
+    },
   },
   -- resize using Alt+direction
   { "mrjones2014/smart-splits.nvim", lazy = false, version = ">=1.0.0" },
@@ -123,7 +140,22 @@ return {
     opts = {
       hi = {
         fg = "#876015",
-      }
-    }
-  }
+      },
+    },
+  },
+  {
+    "aohoyd/broot.nvim",
+    lazy = false,
+    opts = {
+      broot_conf_path = vim.fn.expand("~/.config/broot/nvim.hjson"),
+    },
+    keys = {
+      { "<leader><space>", "<cmd>BrootProjectDir<cr>", desc = "Broot Project Dir" },
+      { "<leader>.", "<cmd>BrootCurrentDir<cr>", desc = "Broot Current Dir" },
+      { "<leader>Bh", "<cmd>BrootHomeDir<cr>", desc = "Broot Home Dir" },
+      { "<leader>B.", "<cmd>BrootCurrentDir<cr>", desc = "Broot Current Dir" },
+      { "<leader>Bw", "<cmd>BrootWorkingDir<cr>", desc = "Broot Working Dir" },
+      { "<leader>Bp", "<cmd>BrootProjectDir<cr>", desc = "Broot Project Dir" },
+    },
+  },
 }

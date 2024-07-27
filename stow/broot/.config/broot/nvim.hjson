@@ -1,0 +1,133 @@
+# This configuration file is like conf.hjson but with initial_mode: input
+# instead of command and adding the `--hidden` flag for configuration files
+#
+###############################################################
+# Default flags
+# You can set up flags you want broot to start with by
+# default, for example `default_flags="ihp"` if you usually want
+# to see hidden and gitignored files and the permissions (then
+# if you don't want the hidden files you can launch `br -H`)
+# A popular flag is the `g` one which displays git related info.
+#
+default_flags: --hidden --no-git-ignored --show-git-info --sizes
+
+###############################################################
+# uncomment to activate modal mode
+#
+# (you really should read https://dystroy.org/broot/modal/
+# before as it may not suit everybody even among vim users)
+#
+modal: true
+initial_mode: input
+
+###############################################################
+# Whether to mark the selected line with a triangle
+#
+show_selection_mark: true
+
+###############################################################
+# Icons
+# If you want to display icons in broot, uncomment this line
+# (see https://dystroy.org/broot/icons for installation and
+# troubleshooting)
+#
+icon_theme: nerdfont
+
+###############################################################
+# Special paths
+# If some paths must be handled specially, uncomment (and change
+# this section as per the examples)
+#
+special_paths: {
+    "/media" : "no-enter" // comment it if desired
+    # "/media/slow-backup-disk"    : no-enter
+    # "/home/dys/useless"    : hide
+    # "/home/dys/my-link-I-want-to-explore"    : enter
+}
+
+###############################################################
+# File Extension Colors
+#
+# uncomment and modify the next section if you want to color
+# file name depending on their extension
+#
+ext_colors: {
+    png: rgb(215, 187, 15)
+    jpg: rgb(215, 187, 15)
+    jpeg: rgb(215, 187, 15)
+    svg: rgb(215, 187, 187)
+    rs: rgb(126, 87, 0)
+    cc: rgb(87, 187, 255)
+    c: rgb(87, 187, 255)
+    h: rgb(215, 187, 126)
+    hh: rgb(215, 187, 126)
+    py: rgb(40, 160, 255)
+    md: rgb(215, 187, 215)
+    tex: rgb(215, 187, 160)
+    bib: rgb(187, 187, 87)
+    sty: rgb(187, 187, 215)
+    bst: rgb(187, 187, 215)
+    pdf: rgb(215, 115, 115)
+    odt: rgb(87, 160, 255)
+    doc: rgb(87, 160, 255)
+    docx: rgb(87, 160, 255)
+    ods: rgb(160, 226, 160)
+    xls: rgb(160, 226, 160)
+    xlsx: rgb(160, 226, 160)
+    odp: rgb(255, 187, 140)
+    ppt: rgb(255, 187, 140)
+    pptx: rgb(255, 187, 140)
+    tar: rgb(215, 40, 40)
+    gz: rgb(215, 40, 40)
+    tgz: rgb(215, 40, 40)
+    7z: rgb(215, 40, 40)
+    zip: rgb(215, 40, 40)
+}
+
+###############################################################
+# Max file size for content search
+#
+# Bigger files are ignored when searching their content. You
+# can specify this size either in ISO units (eg 5GB) or in
+# the old binary units (eg 44Kib)
+content_search_max_file_size: 10MB
+
+###############################################################
+# Imports
+#
+# While it's possible to have all configuration in one file,
+# it's more convenient to split it in several ones.
+# Importing also allows to set a condition on the terminal's
+# color, which makes it possible to have a different skin 
+# chosen when your terminal has a light background and when
+# it has a light one.
+imports: [
+
+    # Verbs are better configured in verbs.hjson. But you
+    # can also add another files for your personal verbs
+    verbs.hjson
+
+    # This file contains the skin to use when the terminal
+    # is dark (or when this couldn't be determined)
+    {
+        luma: [
+            dark
+            unknown
+        ]
+        # (un)comment to choose your preferred skin
+        file: skins/dark-blue.hjson
+        //file: skins/catppuccin-macchiato.hjson
+        //file: skins/catppuccin-mocha.hjson
+        //file: skins/dark-gruvbox.hjson
+        //file: skins/dark-orange.hjson
+        //file: skins/solarized-dark.hjson
+    }
+
+    # This skin is imported when your terminal is light
+    {
+        luma: light
+        # (un)comment to choose your preferred skin
+        //file: skins/solarized-light.hjson
+        file: skins/white.hjson
+    }
+]

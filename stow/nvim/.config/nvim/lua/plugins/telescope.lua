@@ -40,6 +40,7 @@ return {
         LazyVim.pick("auto", { hidden = true, noignore = true, root = false }),
         desc = "Find Hidden Files (cwd dir)",
       },
+      { "<leader><space>", false },
     },
   },
   {

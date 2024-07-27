@@ -7,6 +7,7 @@ This configuration adds some extensions and customizations:
 
 - `persisted.nvim` instead of `persistence` for better sessions management
 tracking git branches and with Telescope list.
+- `broot.nvim` for files search (fzf can be used with `<Space>ff`).
 - gitui extra (instead of lazyvim).
 - neovim-neoclip for friendly clipboard and macros history
 - `<C-q>` to close window and focus.nvim:
@@ -23,7 +24,8 @@ tracking git branches and with Telescope list.
 - barbar (buffferline) with <C-x> to delete buffer and <C-p> to
 pick buffer by letter.
 - Legendary command-palette-like search with `<space>P`.
-- no-neck-pain (zen mode like) with width=150 using `<space>uz`.
+- no-neck-pain (zen mode like) with width=150 using `<space>un`.
+- `folke/zen-mode.nvim` for a true Zen mode using `<space>uz`.
 - flash (the new LazyVim default) has replaced hop.nvim (it was replacing the original defaults leap and flit).
 - Rust, clangd, Python, black, markdown
 (with markdown-preview disabled) and tex extras.
@@ -32,13 +34,15 @@ pick buffer by letter.
 - ltex-ls for text, Markdown and LaTeX files.
 - codespell configured for diagnostics in nvim-lint
 (`codespell` must be installed in the system and accessible in the PATH).
-- Supertab for snippets and completion.
+- `nvim-scissors` configured for nvim-snippets with `<space>cpa` and
+`<space>cpe` to add and edit snippets.
 - Telescope-fzf-native.
 - Telescope projects with `<space>p` (and project extra).
 - Telescope LaTeX and math symbols with `<space>tl`.
 - mellifluous (disabled by default) and darker and warmer melange (default)
   colorschemes.
 - nvim-scrollbar.
+- `mini.animate` extra for smooth scrolling for a easier tracking of screen moves.
 - Minimal notifications in nvim-notify.
 - vim-illuminate.
 - git-messenger and vim-gitgutter.

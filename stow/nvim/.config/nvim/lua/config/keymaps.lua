@@ -99,9 +99,6 @@ map(
   { desc = "Spider-ge", silent = true, noremap = true }
 )
 
--- No neck pain (zen mode like)
-map("n", "<leader>uz", "<cmd>NoNeckPain<cr>", { desc = "No neck pain (zen mode)", silent = true, noremap = true })
-
 -- GitGutter additional keymaps
 map("n", "[h", "<cmd>GitGutterPrevHunk<cr>", { desc = "Previous hunk (git change)", silent = true, noremap = true })
 map("n", "]h", "<cmd>GitGutterNextHunk<cr>", { desc = "Next hunk (git change)", silent = true, noremap = true })
