@@ -13,10 +13,10 @@ return {
         on_attach = function(client, bufnr)
           -- your other on_attach functions.
           require("ltex_extra").setup({
-            load_langs = { "en-US" }, -- a table <string> : languages for witch dictionaries will be loaded
-            init_check = true, -- boolean : whether to load dictionaries on startup
+            load_langs = { "en-US" },             -- a table <string> : languages for witch dictionaries will be loaded
+            init_check = true,                    -- boolean : whether to load dictionaries on startup
             path = vim.env.HOME .. "/.nvim/ltex", -- string : path to store dictionaries. Relative path uses current working directory
-            log_level = "info", -- string : "none", "trace", "debug", "info", "warn", "error", "fatal"
+            log_level = "info",                   -- string : "none", "trace", "debug", "info", "warn", "error", "fatal"
           })
         end,
         -- TODO: check grammar on comments, not working
@@ -56,15 +56,15 @@ return {
   },
   {
     "williamboman/mason.nvim",
-      enabled = false,
+    enabled = false,
   },
   {
     "williamboman/mason-lspconfig.nvim",
-      enabled = false,
+    enabled = false,
   },
   {
     "jay-babu/mason-nvim-dap.nvim",
-      enabled = false,
+    enabled = false,
   },
   {
     "neovim/nvim-lspconfig",

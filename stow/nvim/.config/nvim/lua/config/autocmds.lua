@@ -12,29 +12,29 @@ vim.cmd('autocmd BufEnter,BufWritePost,InsertLeave * lua require("lint").try_lin
 
 local group = vim.api.nvim_create_augroup("PersistedHooks", {})
 vim.api.nvim_create_autocmd({ "User" }, {
-    pattern = "PersistedTelescopeLoadPre",
-    group = group,
-    callback = function(session)
-        -- Save the currently loaded session
-        require("persisted").save({ session = vim.g.persisted_loaded_session })
+  pattern = "PersistedTelescopeLoadPre",
+  group = group,
+  callback = function(session)
+    -- Save the currently loaded session
+    require("persisted").save({ session = vim.g.persisted_loaded_session })
 
-        -- Delete all of the open buffers
-        vim.api.nvim_input("<ESC>:%bd!<CR>")
-    end,
+    -- Delete all of the open buffers
+    vim.api.nvim_input("<ESC>:%bd!<CR>")
+  end,
 })
 
 -- conceal disabled by default in Markdown and LaTeX, it is not very useful in
 -- TUI because many things are not correctly displayed
 vim.api.nvim_create_autocmd({ "FileType" }, {
-    pattern = { "markdown", "tex" },
-    callback = function()
-        vim.wo.conceallevel = 0
-    end,
+  pattern = { "markdown", "tex" },
+  callback = function()
+    vim.wo.conceallevel = 0
+  end,
 })
 vim.api.nvim_create_autocmd({ "FileType" }, {
-    pattern = { "lua" },
-    callback = function()
-        vim.opt.tabstop = 2
-        vim.opt.shiftwidth = 2
-    end,
+  pattern = { "lua" },
+  callback = function()
+    vim.opt.tabstop = 2
+    vim.opt.shiftwidth = 2
+  end,
 })
