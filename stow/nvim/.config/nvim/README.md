@@ -29,6 +29,7 @@ pick buffer by letter.
 - flash (the new LazyVim default) has replaced hop.nvim (it was replacing the original defaults leap and flit).
 - Rust, clangd, Python, black, markdown
 (with markdown-preview disabled) and tex extras.
+-`devdocs.vim` for DevDocs integration (`<space>dd` keymaps).
 - DAP, DAPUI and nvim-dap-virtual-text with mappings (DAP core extra).
 - vimtex and texlab (with cktex enabled on save) for LaTeX.
 - ltex-ls for text, Markdown and LaTeX files.

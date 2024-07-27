@@ -161,4 +161,15 @@ return {
       { "<leader>Bp",      "<cmd>BrootProjectDir<cr>", desc = "Broot Project Dir" },
     },
   },
+  {
+    "girishji/devdocs.vim",
+    config = function()
+      vim.api.nvim_call_function(vim.g.DevdocsOptions, { open_mode = 'vert' })
+    end,
+    keys = {
+      { "<leader>ddi", "<cmd>DevdocsInstall<cr>",  desc = "DevDocs Install new language docs" },
+      { "<leader>ddu", "<cmd>DevdocsUnnstall<cr>", desc = "DevDocs Uninstall language docs" },
+      { "<leader>ddf", "<cmd>DevdocsFind<cr>",     desc = "DevDocs Find" },
+    }
+  },
 }
