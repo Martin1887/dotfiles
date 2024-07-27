@@ -31,12 +31,3 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
         vim.wo.conceallevel = 0
     end,
 })
-
--- black background for floating terminals
-vim.api.nvim_set_hl(0, "Terminal", { bg = vim.g.terminal_color_0 })
-vim.api.nvim_create_autocmd({ "FileType" }, {
-    pattern = { "lazyterm" },
-    callback = function()
-        vim.cmd("set winhl=NormalFloat:Terminal")
-    end,
-})
