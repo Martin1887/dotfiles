@@ -27,7 +27,7 @@ pick buffer by letter.
 - no-neck-pain (zen mode like) with width=150 using `<space>un`.
 - `folke/zen-mode.nvim` for a true Zen mode using `<space>uz`.
 - flash (the new LazyVim default) has replaced hop.nvim (it was replacing the original defaults leap and flit).
-- Rust, clangd, Python, black, markdown
+- Rust, clangd, Python, markdown
 (with markdown-preview disabled) and tex extras.
 - DAP, DAPUI and nvim-dap-virtual-text with mappings (DAP core extra).
 - vimtex and texlab (with cktex enabled on save) for LaTeX.
