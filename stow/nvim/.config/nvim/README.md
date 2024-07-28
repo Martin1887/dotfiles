@@ -36,6 +36,7 @@ pick buffer by letter.
 (`codespell` must be installed in the system and accessible in the PATH).
 - `nvim-scissors` configured for nvim-snippets with `<space>cpa` and
 `<space>cpe` to add and edit snippets.
+- `SuperTab` recipe for `cmp`.
 - Telescope-fzf-native.
 - Telescope projects with `<space>p` (and project extra).
 - Telescope LaTeX and math symbols with `<space>tl`.

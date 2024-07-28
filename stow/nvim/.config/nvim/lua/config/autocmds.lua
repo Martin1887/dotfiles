@@ -31,6 +31,14 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
     vim.wo.conceallevel = 0
   end,
 })
+-- set tabstop and shiftwidth=2 only for selected languages
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = { "*" },
+  callback = function()
+    vim.opt.tabstop = 4
+    vim.opt.shiftwidth = 4
+  end,
+})
 vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = { "lua" },
   callback = function()
