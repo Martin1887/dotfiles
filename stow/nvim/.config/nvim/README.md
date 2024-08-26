@@ -11,11 +11,12 @@ tracking git branches and with Telescope list.
 - gitui extra (instead of lazyvim).
 - neovim-neoclip for friendly clipboard and macros history
 - `<C-q>` to close window and focus.nvim:
-  - `<C-.>` to split nicely (golden ratio).
+  - `<C-.>` to enable window autoresize (disabled by default).
+  - `<C-,>` to disable window autoresize (disabled by default).
   - `<C-h/j/k/l>` to move to window in direction or create it if it does not
     exist.
   - `<C-m>` to maximize/set equal size of windows.
-  - `<C-,>` for golden ratio (usually used after `<C-m>`).
+  - `<C-:>` to autoresize by golden ratio (default).
 - colorful-winsep.nvim for a colorful border in the active window.
 - neo-tree source selector winbar and mappings, navigation with
 `h` and `l` and modified untracked files highlight.
@@ -24,7 +25,7 @@ tracking git branches and with Telescope list.
 - barbar (buffferline) with <C-x> to delete buffer and <C-p> to
 pick buffer by letter.
 - Legendary command-palette-like search with `<space>P`.
-- no-neck-pain (zen mode like) with width=150 using `<space>un`.
+- no-neck-pain (zen mode like) with width=150 using `<space>uZ`.
 - `folke/zen-mode.nvim` for a true Zen mode using `<space>uz`.
 - flash (the new LazyVim default) has replaced hop.nvim (it was replacing the original defaults leap and flit).
 - Rust, clangd, Python, markdown

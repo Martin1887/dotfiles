@@ -54,7 +54,7 @@ return {
       width = 150,
     },
     keys = {
-      { "<leader>un", "<cmd>NoNeckPain<cr>", desc = "No neck pain (zen-like mode)" },
+      { "<leader>uZ", "<cmd>NoNeckPain<cr>", desc = "No neck pain (zen-like mode)" },
     },
   },
   {
@@ -125,15 +125,31 @@ return {
     opts = {
       enable = true,
       commands = true,
+      autoresize = {
+        enable = false,
+      },
     },
     keys = {
-      { "<C-.>", "<cmd>FocusSplitNicely<cr>", desc = "Focus Split Nicely" },
-      { "<C-h>", "<cmd>FocusSplitLeft<cr>",   desc = "Focus Left Window or Create it" },
-      { "<C-j>", "<cmd>FocusSplitDown<cr>",   desc = "Focus Down Window or Create it" },
-      { "<C-k>", "<cmd>FocusSplitUp<cr>",     desc = "Focus Up Window or Create it" },
-      { "<C-l>", "<cmd>FocusSplitRight<cr>",  desc = "Focus Right Window or Create it" },
-      { "<C-m>", "<cmd>FocusMaxOrEqual<cr>",  desc = "Focus Toggle Max/Equal Size" },
-      { "<C-,>", "<cmd>FocusAutoresize<cr>",  desc = "Focus Autoresize as gold-ratio" },
+      { "<C-h>", "<cmd>FocusSplitLeft<cr>",  desc = "Focus Left Window or Create it" },
+      { "<C-j>", "<cmd>FocusSplitDown<cr>",  desc = "Focus Down Window or Create it" },
+      { "<C-k>", "<cmd>FocusSplitUp<cr>",    desc = "Focus Up Window or Create it" },
+      { "<C-l>", "<cmd>FocusSplitRight<cr>", desc = "Focus Right Window or Create it" },
+      { "<C-m>", "<cmd>FocusMaxOrEqual<cr>", desc = "Focus Toggle between Maximise or Equal size" },
+      { "<C-:>", "<cmd>FocusAutoresize<cr>", desc = "Focus Autoresize by golden ratio" },
+      {
+        "<C-,>",
+        function()
+          require("focus").setup({ autoresize = { enable = false } })
+        end,
+        desc = "Focus Disable Autoresize",
+      },
+      {
+        "<C-.>",
+        function()
+          require("focus").setup({ autoresize = { enable = true } })
+        end,
+        desc = "Focus Enable Autoresize",
+      },
     },
   },
   {

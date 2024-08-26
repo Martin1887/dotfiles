@@ -22,6 +22,14 @@ return {
       autoload = false,
       follow_cwd = true,
     },
+    config = function(_, opts)
+      local persisted = require("persisted")
+      persisted.branch = function()
+        local current_branch = vim.fn.systemlist("git branch --show-current")[1]
+        return vim.v.shell_error == 0 and current_branch or nil
+      end
+      persisted.setup(opts)
+    end,
     keys = {
       { "<leader>ql", "<cmd>SessionLoadLast<cr>", desc = "Restore Last Session" },
       { "<leader>qs", "<cmd>SessionLoad<cr>", desc = "Restore Session" },
