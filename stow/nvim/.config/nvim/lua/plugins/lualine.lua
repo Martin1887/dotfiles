@@ -17,6 +17,7 @@ return {
   opts = {
     options = {
       theme = "melange",
+      disabled_filetypes = { "neo-tree" }
     },
     sections = {
       -- the path (with symbols navigation) is put in winbar instead
@@ -33,20 +34,20 @@ return {
         },
       },
       lualine_y = {
-        { "filetype", icon_only = true, separator = "", padding = { left = 0, right = 1 } },
+        { "filetype",  icon_only = true,                 separator = "",                   padding = { left = 0, right = 1 } },
         { "encoding" },
         { "fileformat" },
-        { getWords, padding = { left = 1, right = 1 } },
-        { getLines, separator = "", padding = { left = 1, right = 1 } },
-        { "progress", separator = "", padding = { left = 2, right = 1 } },
-        { "location", padding = { left = 1, right = 1 } },
+        { getWords,    padding = { left = 1, right = 1 } },
+        { getLines,    separator = "",                   padding = { left = 1, right = 1 } },
+        { "progress",  separator = "",                   padding = { left = 2, right = 1 } },
+        { "location",  padding = { left = 1, right = 1 } },
       },
     },
     winbar = {
       lualine_a = {},
       lualine_b = {},
       lualine_c = {
-        { "filetype", icon_only = true, separator = "", padding = { left = 1, right = 0 } },
+        { "filetype",                                  icon_only = true, separator = "", padding = { left = 1, right = 0 } },
         { LazyVim.lualine.pretty_path({ length = 20 }) },
         { navicLocation },
       },
