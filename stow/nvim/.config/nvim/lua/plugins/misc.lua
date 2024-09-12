@@ -177,4 +177,11 @@ return {
       { "<leader>Bp",      "<cmd>BrootProjectDir<cr>", desc = "Broot Project Dir" },
     },
   },
+  {
+    "nacro90/numb.nvim",
+    lazy = false,
+    config = function()
+      require("numb").setup()
+    end,
+  }
 }
