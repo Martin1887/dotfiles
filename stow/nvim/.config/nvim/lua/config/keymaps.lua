@@ -13,6 +13,22 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
+-- Gitui keymaps
+map("n", "<leader>gG",
+  function()
+    LazyVim.terminal.open({ "gitui" }, { esc_esc = false, ctrl_hjkl = false })
+  end,
+  { desc = "GitUi (cwd)", silent = true, noremap = true })
+map("n", "<leader>gg",
+  function()
+    LazyVim.terminal.open({ "gitui" }, { cwd = LazyVim.root.get(), esc_esc = false, ctrl_hjkl = false })
+  end,
+  { desc = "GitUi (Root Dir)", silent = true, noremap = true })
+-- Disable lazygit keymaps
+vim.keymap.del("n", "<leader>gf")
+vim.keymap.del("n", "<leader>gl")
+vim.keymap.del("n", "<leader>gL")
+
 -- Map ¡ (very more usable in Spanish keyboards) to ^
 map("n", "¡", "^", { desc = "Start of line (non-blank)", silent = true, noremap = true })
 
