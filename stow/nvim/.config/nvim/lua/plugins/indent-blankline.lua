@@ -51,7 +51,7 @@ return {
 
         vim.api.nvim_set_hl(0, "BrightRainbowRed", { fg = "#FF7070" })
         vim.api.nvim_set_hl(0, "BrightRainbowYellow", { fg = "#E8BB26" })
-        vim.api.nvim_set_hl(0, "BrightRainbowBlue", { fg = "#1515AA" })
+        vim.api.nvim_set_hl(0, "BrightRainbowBlue", { fg = "#7087FF" })
         vim.api.nvim_set_hl(0, "BrightRainbowOrange", { fg = "#DD8726" })
         vim.api.nvim_set_hl(0, "BrightRainbowGreen", { fg = "#40AA40" })
         vim.api.nvim_set_hl(0, "BrightRainbowViolet", { fg = "#DD7780" })
