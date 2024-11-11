@@ -25,9 +25,9 @@ map("n", "<leader>gg",
   end,
   { desc = "GitUi (Root Dir)", silent = true, noremap = true })
 -- Disable lazygit keymaps
-vim.keymap.del("n", "<leader>gf")
-vim.keymap.del("n", "<leader>gl")
-vim.keymap.del("n", "<leader>gL")
+-- vim.keymap.del("n", "<leader>gf")
+-- vim.keymap.del("n", "<leader>gl")
+-- vim.keymap.del("n", "<leader>gL")
 
 -- Map ¡ (very more usable in Spanish keyboards) to ^
 map("n", "¡", "^", { desc = "Start of line (non-blank)", silent = true, noremap = true })
