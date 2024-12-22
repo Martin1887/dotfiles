@@ -58,6 +58,10 @@ return {
             "BrightRainbowCyan",
           }
           vim.g.rainbow_delimiters = { highlight = delims_highlight }
+
+          -- wider lines
+          opts.indent.char = "┃"
+          opts.scope.char = "┃"
         end,
       },
     },
