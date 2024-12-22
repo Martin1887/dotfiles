@@ -59,7 +59,7 @@ file history view in new tab.
 - vim-matchup for better `%`.
 - `https://github.com/hiphish/rainbow-delimiters.nvim` for colorized parenthesis with colors set
   as melangeDarkWarm theme.
-- indent-blankline customized with scope and colorful indent (dimmed) and scope lines.
+- `snacks`'s indent and scope customized with colorful rainbow-like indent lines.
 - boole to cycle among boolean values (`<C-x>` is changed to `<C-z>`).
 - tint to tint inactive windows.
 - nvim-spider for subword and skipping punctuation `w,e,b,ge` movements.
