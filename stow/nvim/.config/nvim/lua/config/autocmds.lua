@@ -62,12 +62,8 @@ vim.api.nvim_create_autocmd("FileType", {
   desc = "Disable focus autoresize for FileType",
 })
 
--- barbar persisted
-vim.opt.sessionoptions:append 'globals'
-vim.api.nvim_create_autocmd({ 'User' }, {
-  pattern = 'PersistedSavePre',
-  group = vim.api.nvim_create_augroup('PersistedHooks', {}),
-  callback = function()
-    vim.api.nvim_exec_autocmds('User', { pattern = 'SessionSavePre' })
-  end,
-})
+-- barbar persistence
+require 'persistence'.setup {
+  options = { --[[<other options>,]] 'globals' },
+  pre_save = function() vim.api.nvim_exec_autocmds('User', { pattern = 'SessionSavePre' }) end,
+}

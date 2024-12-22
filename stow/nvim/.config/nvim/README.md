@@ -5,8 +5,6 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
 This configuration adds some extensions and customizations:
 
-- `persisted.nvim` instead of `persistence` for better sessions management
-tracking git branches and with Telescope list.
 - `broot.nvim` for files search (fzf can be used with `<Space>ff`).
 - `numb.nvim` to preview lines when written in the command window.
 - gitui keymaps (instead of lazygit ones).
