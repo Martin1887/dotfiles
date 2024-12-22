@@ -43,7 +43,6 @@ pick buffer by letter.
 - mellifluous (disabled by default) and darker and warmer melange (default)
   colorschemes.
 - nvim-scrollbar.
-- `mini.animate` extra for smooth scrolling for a easier tracking of screen moves.
 - Minimal notifications in nvim-notify.
 - vim-illuminate.
 - git-messenger and vim-gitgutter.
