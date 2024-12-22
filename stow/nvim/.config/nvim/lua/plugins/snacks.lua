@@ -48,6 +48,12 @@ return {
           -- wider lines
           opts.indent.char = "┃"
           opts.scope.char = "┃"
+
+          -- shorter animations
+          opts.animate.duration = {
+            step = 20,
+            total = 200,
+          }
         end,
       },
     },
