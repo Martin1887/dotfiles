@@ -61,7 +61,7 @@ return {
       },
       scroll = {
         animate = {
-          duration = { step = 15, total = 150 },
+          duration = { step = 15, total = 255 },
         }
       }
     },
