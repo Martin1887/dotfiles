@@ -4,6 +4,15 @@
 #	name = username
 #	email = email
 
+[column]
+    ui = auto
+[branch]
+    sort = -committerdate
+[tag]
+    sort = version:refname
+[init]
+    defaultBranch = main
+
 [core]
 	pager = delta
 
@@ -18,10 +27,13 @@
 	syntax-theme = zenburn
 
 [merge]
-	conflictstyle = diff3
+    conflictstyle = zdiff3
 
 [diff]
-	colorMoved = default
+    algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+    renames = true
     tool = difftastic
 [difftool]
     prompt = false
@@ -29,6 +41,18 @@
     cmd = difft "$LOCAL" "$REMOTE"
 [pager]
     difftool = true
+
+[push]
+    default = simple
+    autoSetupRemote = true
+    followTags = true
+[fetch]
+    prune = true
+    pruneTags = true
+    all = true
+
+[commit]
+    verbose = true
 
 [author]
 # Please adapt and uncomment the following lines:
