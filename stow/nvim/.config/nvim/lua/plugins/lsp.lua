@@ -13,7 +13,7 @@ return {
         on_attach = function(client, bufnr)
           -- your other on_attach functions.
           require("ltex_extra").setup({
-            load_langs = { "en-US" },             -- a table <string> : languages for witch dictionaries will be loaded
+            load_langs = { "en-GB" },             -- a table <string> : languages for witch dictionaries will be loaded
             init_check = true,                    -- boolean : whether to load dictionaries on startup
             path = vim.env.HOME .. "/.nvim/ltex", -- string : path to store dictionaries. Relative path uses current working directory
             log_level = "info",                   -- string : "none", "trace", "debug", "info", "warn", "error", "fatal"
