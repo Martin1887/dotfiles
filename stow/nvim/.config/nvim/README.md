@@ -32,6 +32,7 @@ pick buffer by letter.
 - DAP, DAPUI and nvim-dap-virtual-text with mappings (DAP core extra).
 - vimtex and texlab (with cktex enabled on save) for LaTeX.
 - ltex-ls-plus for text, Markdown and LaTeX files.
+- harper for grammar check in text and programming languages files.
 - typos-lsp.
 - `nvim-scissors` configured for nvim-snippets with `<space>cpa` and
 `<space>cpe` to add and edit snippets.

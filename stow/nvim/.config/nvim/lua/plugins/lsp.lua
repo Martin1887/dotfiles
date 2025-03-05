@@ -17,19 +17,15 @@ return {
             log_level = "info",                   -- string : "none", "trace", "debug", "info", "warn", "error", "fatal"
           })
         end,
-        -- TODO: check grammar on comments, not working
+        -- For programming languages harper is used instead, much faster
         filetypes = {
           "bib",
-          -- "c++",
-          -- "cpp",
           "gitcommit",
-          -- "lua",
           "markdown",
           "org",
           "plaintex",
           "rst",
           "rnoweb",
-          -- "rust",
           "tex",
         },
         settings = {
@@ -90,7 +86,8 @@ return {
             },
           },
         },
-        typos_lsp = {}
+        typos_lsp = {},
+        harper_ls = {}
       },
       setup = {
         ["ruff"] = function()
