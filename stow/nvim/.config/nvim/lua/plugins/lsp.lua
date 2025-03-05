@@ -41,10 +41,7 @@ return {
               motherTongue = "es",
             },
             ltex_ls = {
-              path = "ltex-ls",
-            },
-            java = {
-              path = "java",
+              path = "ltex-ls-plus",
             },
             completionEnabled = true,
             -- "edit", "save" or "manual"
