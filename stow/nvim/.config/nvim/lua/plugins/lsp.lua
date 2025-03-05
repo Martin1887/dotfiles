@@ -9,7 +9,7 @@ return {
   {
     "barreiroleo/ltex-extra.nvim",
     config = function()
-      require("lspconfig").ltex.setup({
+      require("lspconfig").ltex_plus.setup({
         on_attach = function(client, bufnr)
           -- your other on_attach functions.
           require("ltex_extra").setup({
