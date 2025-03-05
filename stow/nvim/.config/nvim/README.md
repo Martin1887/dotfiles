@@ -32,8 +32,7 @@ pick buffer by letter.
 - DAP, DAPUI and nvim-dap-virtual-text with mappings (DAP core extra).
 - vimtex and texlab (with cktex enabled on save) for LaTeX.
 - ltex-ls-plus for text, Markdown and LaTeX files.
-- codespell configured for diagnostics in nvim-lint
-(`codespell` must be installed in the system and accessible in the PATH).
+- typos-lsp.
 - `nvim-scissors` configured for nvim-snippets with `<space>cpa` and
 `<space>cpe` to add and edit snippets.
 - `SuperTab` recipe for `cmp`.

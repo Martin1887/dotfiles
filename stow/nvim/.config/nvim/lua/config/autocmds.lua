@@ -6,10 +6,6 @@
 vim.cmd("hi NeoTreeGitUntracked guifg=#eebb15")
 vim.cmd("hi NeoTreeGitUnstaged guifg=#DD8764")
 
--- codespell with nvim-lint for specified and all filetypes
-vim.cmd('autocmd BufEnter,BufWritePost,InsertLeave * lua require("lint").try_lint()')
-vim.cmd('autocmd BufEnter,BufWritePost,InsertLeave * lua require("lint").try_lint({"codespell"})')
-
 -- conceal disabled by default in Markdown and LaTeX, it is not very useful in
 -- TUI because many things are not correctly displayed
 vim.api.nvim_create_autocmd({ "FileType" }, {

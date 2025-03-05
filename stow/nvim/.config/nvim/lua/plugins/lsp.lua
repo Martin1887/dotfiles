@@ -1,5 +1,3 @@
-require("lint").linters.codespell.args = { "-L crate,Crate,crates,Crates", "-" }
-
 return {
   {
     "iamcco/markdown-preview.nvim",
@@ -92,6 +90,7 @@ return {
             },
           },
         },
+        typos_lsp = {}
       },
       setup = {
         ["ruff"] = function()
