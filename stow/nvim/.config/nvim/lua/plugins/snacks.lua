@@ -71,7 +71,7 @@ return {
         zoom = {
           win = {
             width = 150,
-            backdrop = { transparent = true, blend = 100 },
+            backdrop = { transparent = true, blend = 0 },
           }
         }
       },
@@ -82,7 +82,7 @@ return {
           minimal = false,
           width = 120,
           height = 0,
-          backdrop = { transparent = true, blend = 100 },
+          backdrop = { transparent = true, blend = 0 },
           keys = { q = false },
           zindex = 40,
           wo = {
