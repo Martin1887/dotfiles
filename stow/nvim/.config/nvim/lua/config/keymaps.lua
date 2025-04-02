@@ -16,12 +16,12 @@ end
 -- Gitui keymaps
 map("n", "<leader>gG",
   function()
-    LazyVim.terminal.open({ "gitui" }, { esc_esc = false, ctrl_hjkl = false })
+    Snacks.terminal({ "gitui" })
   end,
   { desc = "GitUi (cwd)", silent = true, noremap = true })
 map("n", "<leader>gg",
   function()
-    LazyVim.terminal.open({ "gitui" }, { cwd = LazyVim.root.get(), esc_esc = false, ctrl_hjkl = false })
+    Snacks.terminal({ "gitui" }, { cwd = LazyVim.root.get() })
   end,
   { desc = "GitUi (Root Dir)", silent = true, noremap = true })
 -- Disable lazygit keymaps
