@@ -71,9 +71,28 @@ return {
         zoom = {
           win = {
             width = 150,
+            backdrop = { transparent = true, blend = 100 },
           }
         }
-      }
+      },
+      styles = {
+        zen = {
+          enter = true,
+          fixbuf = false,
+          minimal = false,
+          width = 120,
+          height = 0,
+          backdrop = { transparent = true, blend = 100 },
+          keys = { q = false },
+          zindex = 40,
+          wo = {
+            winhighlight = "NormalFloat:Normal",
+          },
+          w = {
+            snacks_main = true,
+          },
+        }
+      },
     },
     keys = {},
   }
