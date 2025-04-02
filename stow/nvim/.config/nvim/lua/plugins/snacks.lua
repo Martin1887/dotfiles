@@ -63,6 +63,16 @@ return {
         animate = {
           duration = { step = 17, total = 510 },
         }
+      },
+      zen = {
+        config = function(_, _)
+          vim.api.nvim_set_hl(0, "SnacksDim", { fg = "#444444" })
+        end,
+        zoom = {
+          win = {
+            width = 150,
+          }
+        }
       }
     },
     keys = {},
