@@ -94,6 +94,9 @@ return {
         }
       },
     },
-    keys = {},
+    keys = {
+      { "<leader><space>", false },
+      { "<leader>.",       false },
+    },
   }
 }
