@@ -42,7 +42,7 @@ pick buffer by letter.
 - nvim-scrollbar.
 - Minimal notifications in nvim-notify.
 - vim-illuminate.
-- git-messenger and vim-gitgutter.
+- vim-gitgutter.
 - diffview.nvim (`:DiffviewOpen`, `DiffviewFileHistory`): open git diff and
 file history view in new tab.
 - vim-mundo (undo tree).
