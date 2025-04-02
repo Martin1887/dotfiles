@@ -23,8 +23,6 @@ This configuration adds some extensions and customizations:
 - barbar (buffferline) with <C-x> to delete buffer and <C-p> to
 pick buffer by letter.
 - Legendary command-palette-like search with `<space>P`.
-- no-neck-pain (zen mode like) with width=150 using `<space>uZ`.
-- `folke/zen-mode.nvim` for a true Zen mode using `<space>uz`.
 - flash (the new LazyVim default) has replaced hop.nvim (it was replacing the original defaults leap and flit).
 - Rust, clangd, Python, markdown
 (with markdown-preview disabled) and tex extras.
