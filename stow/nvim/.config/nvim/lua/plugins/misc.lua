@@ -149,11 +149,4 @@ return {
       require("numb").setup()
     end,
   },
-  {
-    "ahmedkhalf/project.nvim",
-    opts = {
-      manual_mode = false,
-      silent_chdir = false,
-    },
-  }
 }
