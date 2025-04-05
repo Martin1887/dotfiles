@@ -12,8 +12,6 @@ return {
   -- better '%'
   { "andymass/vim-matchup" },
   { "hiphish/rainbow-delimiters.nvim" },
-  -- LaTeX symbols in telescope
-  { "nvim-telescope/telescope-symbols.nvim" },
   -- barbar (bufferline)
   {
     "akinsho/bufferline.nvim",

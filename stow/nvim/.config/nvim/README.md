@@ -8,7 +8,6 @@ This configuration adds some extensions and customizations:
 - `broot.nvim` for files search (fzf can be used with `<Space>ff`).
 - `numb.nvim` to preview lines when written in the command window.
 - gitui keymaps (instead of lazygit ones).
-- neovim-neoclip for friendly clipboard and macros history
 - `<C-q>` to close window and focus.nvim:
   - `<C-.>` to enable window autoresize (disabled by default).
   - `<C-,>` to disable window autoresize (disabled by default).
@@ -34,9 +33,6 @@ pick buffer by letter.
 - `nvim-scissors` configured for nvim-snippets with `<space>cpa` and
 `<space>cpe` to add and edit snippets.
 - `SuperTab` recipe for `cmp`.
-- Telescope-fzf-native.
-- Telescope projects with `<space>p` (and project extra).
-- Telescope LaTeX and math symbols with `<space>tl`.
 - mellifluous (disabled by default) and darker and warmer melange (default)
   colorschemes.
 - nvim-scrollbar.
@@ -45,8 +41,6 @@ pick buffer by letter.
 - vim-gitgutter.
 - diffview.nvim (`:DiffviewOpen`, `DiffviewFileHistory`): open git diff and
 file history view in new tab.
-- vim-mundo (undo tree).
-- telescope-undo for Telescope undo tree changes with `<leader>tu`.
 - targets.nvim (new selection targets, like parenthesis).
 - ferret (powerful find and replace).
 - vim-abolish (`:Abolish`, `:Subvert` and coercion).
