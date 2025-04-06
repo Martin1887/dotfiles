@@ -12,10 +12,19 @@ return {
   -- better '%'
   { "andymass/vim-matchup" },
   { "hiphish/rainbow-delimiters.nvim" },
-  -- barbar (bufferline)
   {
     "akinsho/bufferline.nvim",
-    enabled = false
+    keys = {
+      {
+        "<C-p>", "<cmd>BufferLinePick<cr>", desc = "Pick buffer",
+      },
+      {
+        "<leader>bsd", "<cmd>BufferLineSortByDirectory<cr>", desc = "Sort buffers by directory",
+      },
+      {
+        "<leader>bse", "<cmd>BufferLineSortByExtension<cr>", desc = "Sort buffers by extension"
+      }
+    }
   },
   {
     "romgrk/barbar.nvim",

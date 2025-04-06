@@ -34,60 +34,8 @@ map("n", "¡", "^", { desc = "Start of line (non-blank)", silent = true, noremap
 
 -- C-q to close window
 map("n", "<C-q>", "<C-w>q", { desc = "Delete buffer", silent = true, noremap = true })
--- C-x to close buffer and barbar mappings
-map("n", "<C-x>", "<cmd>BufferClose<cr>", { desc = "Delete buffer", silent = true, noremap = true })
-map("n", "H", "<cmd>BufferPrevious<cr>", { desc = "Previous buffer", silent = true, noremap = true })
-map("n", "L", "<cmd>BufferNext<cr>", { desc = "Next buffer", silent = true, noremap = true })
-map(
-  "n",
-  "<A-<>",
-  "<cmd>BufferMovePrevious<cr>",
-  { desc = "Re-order to previous buffer", silent = true, noremap = true }
-)
-map("n", "<A->>", "<cmd>BufferMoveNext<cr>", { desc = "Re-order to next buffer", silent = true, noremap = true })
-map("n", "<A-1>", "<cmd>BufferGoto 1<cr>", { desc = "Go to buffer 1", silent = true, noremap = true })
-map("n", "<A-2>", "<cmd>BufferGoto 2<cr>", { desc = "Go to buffer 2", silent = true, noremap = true })
-map("n", "<A-3>", "<cmd>BufferGoto 3<cr>", { desc = "Go to buffer 3", silent = true, noremap = true })
-map("n", "<A-4>", "<cmd>BufferGoto 4<cr>", { desc = "Go to buffer 4", silent = true, noremap = true })
-map("n", "<A-5>", "<cmd>BufferGoto 5<cr>", { desc = "Go to buffer 5", silent = true, noremap = true })
-map("n", "<A-6>", "<cmd>BufferGoto 6<cr>", { desc = "Go to buffer 6", silent = true, noremap = true })
-map("n", "<A-7>", "<cmd>BufferGoto 7<cr>", { desc = "Go to buffer 7", silent = true, noremap = true })
-map("n", "<A-8>", "<cmd>BufferGoto 8<cr>", { desc = "Go to buffer 8", silent = true, noremap = true })
-map("n", "<A-9>", "<cmd>BufferGoto 9<cr>", { desc = "Go to buffer 9", silent = true, noremap = true })
-map("n", "<A-0>", "<cmd>BufferLast<cr>", { desc = "Go to last buffer", silent = true, noremap = true })
-map("n", "<leader>bp", "<cmd>BufferPin<cr>", { desc = "Pin/unpin buffer", silent = true, noremap = true })
-map(
-  "n",
-  "<leader>bP",
-  "<cmd>BufferCloseAllButPinned<cr>",
-  { desc = "Delete not pinned buffers", silent = true, noremap = true }
-)
-map("n", "<C-p>", "<cmd>BufferPick<cr>", { desc = "Magic buffer-picking mode", silent = true, noremap = true })
-map(
-  "n",
-  "<leader>bsb",
-  "<cmd>BufferOrderByBufferNumber<cr>",
-  { desc = "Sort buffers by buffer number", silent = true, noremap = true }
-)
-map("n", "<leader>bsn", "<cmd>BufferOrderByName<cr>", { desc = "Sort buffers by name", silent = true, noremap = true })
-map(
-  "n",
-  "<leader>bsd",
-  "<cmd>BufferOrderByDirectory<cr>",
-  { desc = "Sort buffers by directory", silent = true, noremap = true }
-)
-map(
-  "n",
-  "<leader>bsl",
-  "<cmd>BufferOrderByLanguage<cr>",
-  { desc = "Sort buffers by language", silent = true, noremap = true }
-)
-map(
-  "n",
-  "<leader>bsw",
-  "<cmd>BufferOrderByWindowNumber<cr>",
-  { desc = "Sort buffers by window number", silent = true, noremap = true }
-)
+-- C-x to close buffer
+map("n", "<C-x>", function(n) Snacks.bufdelete(n) end, { desc = "Delete buffer", silent = true, noremap = true })
 
 -- nvim-spider
 map(

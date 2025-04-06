@@ -8,7 +8,7 @@ This configuration adds some extensions and customizations:
 - `broot.nvim` for files search (fzf can be used with `<Space>ff`).
 - `numb.nvim` to preview lines when written in the command window.
 - gitui keymaps (instead of lazygit ones).
-- `<C-q>` to close window and focus.nvim:
+- `<C-x>` to close buffer, `<C-q>` to close window and focus.nvim:
   - `<C-.>` to enable window autoresize (disabled by default).
   - `<C-,>` to disable window autoresize (disabled by default).
   - `<C-h/j/k/l>` to move to window in direction or create it if it does not
@@ -19,8 +19,8 @@ This configuration adds some extensions and customizations:
 `h` and `l` and modified untracked files highlight.
 - Customized lualine with words count, lines and count, encoding and filetype.
 - relative-toggle.nvim to show relative numbers only in waiting events.
-- barbar (buffferline) with <C-x> to delete buffer and <C-p> to
-pick buffer by letter.
+- `<C-p>` mapping to pick buffer and `<space>bsd` and `<space>bse` to sort them
+by directory and extension.
 - Legendary command-palette-like search with `<space>P`.
 - flash (the new LazyVim default) has replaced hop.nvim (it was replacing the original defaults leap and flit).
 - Rust, clangd, Python, markdown
