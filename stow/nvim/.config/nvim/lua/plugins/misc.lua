@@ -16,8 +16,6 @@ return {
     "akinsho/bufferline.nvim",
     opts = {
       highlights = {
-        separator_style = { "thick" },
-        style_preset = { require("bufferline").style_preset.minimal },
         separator_selected = {
           fg = '#E8BB26',
         },
@@ -27,16 +25,24 @@ return {
         separator_visible = {
           fg = '#877040',
         },
+        indicator_visible = {
+          fg = '#E8BB26',
+        },
+        indicator_selected = {
+          fg = '#E8BB26',
+        },
         modified = {
-          fg = '#874040',
+          fg = '#EE5050',
         },
         modified_visible = {
-          fg = '#874040',
+          fg = '#EE5050',
         },
         modified_selected = {
-          fg = '#874040',
+          fg = '#EE5050',
         },
-      }
+      },
+      style_preset = require("bufferline").style_preset.minimal,
+      separator_style = "thick",
     },
     keys = {
       {
