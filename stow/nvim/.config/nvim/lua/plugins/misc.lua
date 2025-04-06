@@ -64,7 +64,7 @@ return {
     "tiagovla/scope.nvim",
     config = true,
     keys = {
-      "<leader>bt", "<cmd>ScopeMoveBuf<cr>", desc = "Move buffer to another tab"
+      { "<leader>bt", "<cmd>ScopeMoveBuf<cr>", desc = "Move buffer to another tab" }
     },
   },
   -- resize using Alt+direction
