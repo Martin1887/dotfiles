@@ -32,7 +32,6 @@ pick buffer by letter.
 - typos-lsp.
 - `nvim-scissors` configured for nvim-snippets with `<space>cpa` and
 `<space>cpe` to add and edit snippets.
-- `SuperTab` recipe for `cmp`.
 - mellifluous (disabled by default) and darker and warmer melange (default)
   colorschemes.
 - nvim-scrollbar.
