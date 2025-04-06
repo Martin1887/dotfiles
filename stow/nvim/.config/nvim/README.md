@@ -15,6 +15,7 @@ This configuration adds some extensions and customizations:
     exist.
   - `<C-m>` to maximize/set equal size of windows.
   - `<C-:>` to autoresize by golden ratio (default).
+  Per-tab buffers with scope.nvim
 - neo-tree source selector winbar and mappings, navigation with
 `h` and `l` and modified untracked files highlight.
 - Customized lualine with words count, lines and count, encoding and filetype.

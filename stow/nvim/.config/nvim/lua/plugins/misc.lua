@@ -60,6 +60,13 @@ return {
       }
     }
   },
+  {
+    "tiagovla/scope.nvim",
+    config = true,
+    keys = {
+      "<leader>bt", "<cmd>ScopeMoveBuf<cr>", desc = "Move buffer to another tab"
+    },
+  },
   -- resize using Alt+direction
   { "mrjones2014/smart-splits.nvim", lazy = false, version = ">=1.0.0" },
   {
