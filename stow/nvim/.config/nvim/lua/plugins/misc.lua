@@ -26,35 +26,6 @@ return {
       }
     }
   },
-  {
-    "romgrk/barbar.nvim",
-    -- version = "^1.0.0",
-    dependencies = {
-      { "nvim-tree/nvim-web-devicons" },
-    },
-    opts = {
-      auto_hide = false,
-      exclude_ft = {},
-      exclude_name = {},
-      highlight_visible = true,
-      highlight_inactive_file_icons = false,
-      focus_on_close = "previous",
-      icons = {
-        diagnostics = {
-          [vim.diagnostic.severity.ERROR] = { enabled = true },
-          [vim.diagnostic.severity.WARN] = { enabled = true },
-          [vim.diagnostic.severity.INFO] = { enabled = false },
-          [vim.diagnostic.severity.HINT] = { enabled = true },
-        },
-        separator = { left = "▊", right = "  " },
-        inactive = {
-          button = "",
-          filetype = { enabled = false },
-          separator = { left = "|", right = "" },
-        },
-      },
-    },
-  },
   -- resize using Alt+direction
   { "mrjones2014/smart-splits.nvim", lazy = false, version = ">=1.0.0" },
   {
