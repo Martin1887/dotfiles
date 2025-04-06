@@ -32,17 +32,21 @@ return {
           fg = '#E8BB26',
         },
         modified = {
-          fg = '#EE5050',
+          fg = '#BB6060',
         },
         modified_visible = {
-          fg = '#EE5050',
+          fg = '#BB6060',
         },
         modified_selected = {
-          fg = '#EE5050',
+          fg = '#BB6060',
+        },
+        tab = {
+          fg = '#999999',
+        },
+        tab_selected = {
+          fg = '#E8BB26',
         },
       },
-      style_preset = require("bufferline").style_preset.minimal,
-      separator_style = "thick",
     },
     keys = {
       {
