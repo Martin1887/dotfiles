@@ -15,20 +15,26 @@ return {
   {
     "akinsho/bufferline.nvim",
     opts = {
-      separator_style = "thick",
-      style_preset = require("bufferline").style_preset.minimal,
       highlights = {
+        separator_style = "thick",
+        style_preset = require("bufferline").style_preset.minimal,
         separator_selected = {
           fg = '#E8BB26',
-          bg = '#E8BB26',
         },
         separator = {
           fg = '#877040',
-          bg = '#877040',
+        },
+        separator_visible = {
+          fg = '#877040',
         },
         modified = {
           fg = '#874040',
-          bg = '#874040',
+        },
+        modified_visible = {
+          fg = '#874040',
+        },
+        modified_selected = {
+          fg = '#874040',
         },
       }
     },
