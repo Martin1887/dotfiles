@@ -50,6 +50,6 @@ file history view in new tab.
 - `https://github.com/hiphish/rainbow-delimiters.nvim` for colorized parenthesis with colors set
   as melangeDarkWarm theme.
 - `snacks`'s indent and scope customized with colorful rainbow-like indent lines.
-- boole to cycle among boolean values (`<C-x>` is changed to `<C-z>`).
+- dial extra to cycle among boolean values and other things (`<C-x>` is changed to `<C-z>`).
 - tint to tint inactive windows.
 - nvim-spider for subword and skipping punctuation `w,e,b,ge` movements.

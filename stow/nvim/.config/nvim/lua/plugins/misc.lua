@@ -99,17 +99,6 @@ return {
     "cpea2506/relative-toggle.nvim",
   },
   {
-    "nat-418/boole.nvim",
-    config = function()
-      require("boole").setup({
-        mappings = {
-          increment = "<C-a>",
-          decrement = "<C-z>",
-        },
-      })
-    end,
-  },
-  {
     "chrisgrieser/nvim-spider",
     lazy = true,
   },
@@ -163,6 +152,7 @@ return {
       { "<leader>Bp",      "<cmd>BrootProjectDir<cr>", desc = "Broot Project Dir" },
     },
   },
+  -- Preview line when using command and number.
   {
     "nacro90/numb.nvim",
     lazy = false,
