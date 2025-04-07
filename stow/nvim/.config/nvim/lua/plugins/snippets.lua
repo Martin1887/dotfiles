@@ -25,7 +25,7 @@ return {
       providers = {
         snippets = {
           opts = {
-            search_paths = { "path/to/your/snippetFolder" },
+            search_paths = { vim.fn.stdpath("config") .. "/snippets" },
           },
         }
       }
