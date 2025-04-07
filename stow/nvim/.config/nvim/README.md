@@ -54,3 +54,4 @@ file history view in new tab.
 - dial extra to cycle among boolean values and other things (`<C-x>` is changed to `<C-z>`).
 - tint to tint inactive windows.
 - nvim-spider for subword and skipping punctuation `w,e,b,ge` movements.
+- nvim-rip-substitute at `<space>fs` for a modern search/replace with ripgrep and friendly syntax.
