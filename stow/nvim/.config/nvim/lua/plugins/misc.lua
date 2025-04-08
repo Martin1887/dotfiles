@@ -32,13 +32,13 @@ return {
           fg = '#E8BB26',
         },
         modified = {
-          fg = '#BB6060',
+          fg = '#E8BB26',
         },
         modified_visible = {
-          fg = '#BB6060',
+          fg = '#E8BB26',
         },
         modified_selected = {
-          fg = '#BB6060',
+          fg = '#E8BB26',
         },
         tab = {
           fg = '#999999',
