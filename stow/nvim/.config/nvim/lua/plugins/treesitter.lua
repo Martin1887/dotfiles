@@ -8,7 +8,6 @@ return {
       "html",
       "javascript",
       "json",
-      "latex",
       "lua",
       "luap",
       "markdown",
