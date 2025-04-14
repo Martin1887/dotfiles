@@ -36,14 +36,15 @@ return {
             local result = {
               { filetype_icon,                               guifg = color },
               { LazyVim.lualine.pretty_path({ length = 20 }) },
+              { " " },
             }
-            for _, item in ipairs(require("nvim-navic").get_data(props.buf) or {}) do
-              table.insert(result, {
-                { ' > ',     group = 'NavicSeparator' },
-                { item.icon, group = 'NavicIcons' .. item.type },
-                { item.name, group = 'NavicText' },
-              })
-            end
+            -- for _, item in ipairs(require("nvim-navic").get_data(props.buf) or {}) do
+            --   table.insert(result, {
+            --     { ' > ',     group = 'NavicSeparator' },
+            --     { item.icon, group = 'NavicIcons' .. item.type },
+            --     { item.name, group = 'NavicText' },
+            --   })
+            -- end
             local buffer = {
               { filetype_icon, guifg = color },
               { " " },
@@ -52,11 +53,11 @@ return {
             if #diagnostics > 0 then
               table.insert(diagnostics, { "| ", guifg = "grey" })
             end
-            for _, buffer_ in ipairs(buffer) do
-              table.insert(diagnostics, buffer_)
-            end
             for _, diag_ in ipairs(diagnostics) do
               table.insert(result, diag_)
+            end
+            for _, buffer_ in ipairs(buffer) do
+              table.insert(result, buffer_)
             end
             return result
           else
