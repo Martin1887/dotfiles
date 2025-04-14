@@ -22,49 +22,9 @@ end
 return {
   {
     'b0o/incline.nvim',
-    opts = {
-      window = {
-        width = "fill",
-      },
-    },
     config = function()
       require('incline').setup({
         debounce_threshold = { falling = 500, rising = 250 },
-        window = {
-          margin = {
-            horizontal = 1,
-            vertical = 1
-          },
-          options = {
-            signcolumn = "no",
-            wrap = false
-          },
-          overlap = {
-            borders = true,
-            statusline = false,
-            tabline = false,
-            winbar = false
-          },
-          padding = 1,
-          padding_char = " ",
-          placement = {
-            horizontal = "right",
-            vertical = "top"
-          },
-          width = "fill",
-          winhighlight = {
-            active = {
-              EndOfBuffer = "None",
-              Normal = "InclineNormal",
-              Search = "None"
-            },
-            inactive = {
-              EndOfBuffer = "None",
-              Normal = "InclineNormalNC",
-              Search = "None"
-            }
-          },
-        },
         render = function(props)
           local bufname = vim.api.nvim_buf_get_name(props.buf)
           local filename = vim.fn.fnamemodify(bufname, ":t")
@@ -72,11 +32,20 @@ return {
           local modified = vim.api.nvim_buf_get_option(props.buf, "modified") and "bold,italic" or "None"
           local filetype_icon, color = require("nvim-web-devicons").get_icon_color(filename)
 
+          local path = LazyVim.norm(bufname)
+          local root = LazyVim.root.get({ normalize = true })
+          local cwd = LazyVim.root.cwd()
+
+          if path:find(cwd, 1, true) == 1 then
+            path = path:sub(#cwd + 2)
+          elseif path:find(root, 1, true) == 1 then
+            path = path:sub(#root + 2)
+          end
 
           if props.focused == true then
             local result = {
               { filetype_icon, guifg = color },
-              bufname,
+              path,
               { " " },
             }
             for _, item in ipairs(require("nvim-navic").get_data(props.buf) or {}) do
