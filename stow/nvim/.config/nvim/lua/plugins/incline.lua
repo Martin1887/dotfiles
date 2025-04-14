@@ -30,6 +30,41 @@ return {
     config = function()
       require('incline').setup({
         debounce_threshold = { falling = 500, rising = 250 },
+        window = {
+          margin = {
+            horizontal = 1,
+            vertical = 1
+          },
+          options = {
+            signcolumn = "no",
+            wrap = false
+          },
+          overlap = {
+            borders = true,
+            statusline = false,
+            tabline = false,
+            winbar = false
+          },
+          padding = 1,
+          padding_char = " ",
+          placement = {
+            horizontal = "right",
+            vertical = "top"
+          },
+          width = "fill",
+          winhighlight = {
+            active = {
+              EndOfBuffer = "None",
+              Normal = "InclineNormal",
+              Search = "None"
+            },
+            inactive = {
+              EndOfBuffer = "None",
+              Normal = "InclineNormalNC",
+              Search = "None"
+            }
+          },
+        },
         render = function(props)
           local bufname = vim.api.nvim_buf_get_name(props.buf)
           local filename = vim.fn.fnamemodify(bufname, ":t")
@@ -37,10 +72,11 @@ return {
           local modified = vim.api.nvim_buf_get_option(props.buf, "modified") and "bold,italic" or "None"
           local filetype_icon, color = require("nvim-web-devicons").get_icon_color(filename)
 
+
           if props.focused == true then
             local result = {
               { filetype_icon, guifg = color },
-              -- LazyVim.lualine.pretty_path({ length = 20 }),
+              bufname,
               { " " },
             }
             for _, item in ipairs(require("nvim-navic").get_data(props.buf) or {}) do
@@ -58,6 +94,7 @@ return {
             if #diagnostics > 0 then
               table.insert(diagnostics, { "| ", guifg = "grey" })
             end
+            table.insert(result, { "  " })
             for _, diag_ in ipairs(diagnostics) do
               table.insert(result, diag_)
             end
