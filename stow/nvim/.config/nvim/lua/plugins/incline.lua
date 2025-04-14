@@ -55,7 +55,9 @@ return {
             for _, buffer_ in ipairs(buffer) do
               table.insert(diagnostics, buffer_)
             end
-            table.insert(result, diagnostics)
+            for _, diag_ in ipairs(diagnostics) do
+              table.insert(result, diag_)
+            end
             return result
           else
             return {
