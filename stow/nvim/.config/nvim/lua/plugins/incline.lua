@@ -34,8 +34,8 @@ return {
 
           if props.focused == true then
             local result = {
-              { filetype_icon,                               guifg = color },
-              { LazyVim.lualine.pretty_path({ length = 20 }) },
+              { filetype_icon, guifg = color },
+              -- { LazyVim.lualine.pretty_path({ length = 20 }) },
               { " " },
             }
             -- for _, item in ipairs(require("nvim-navic").get_data(props.buf) or {}) do
