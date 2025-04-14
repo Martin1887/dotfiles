@@ -8,10 +8,6 @@ local function getLines()
   return tostring(vim.fn.line("$")) .. " lines"
 end
 
-local function navicLocation()
-  return require("nvim-navic").get_location()
-end
-
 return {
   "nvim-lualine/lualine.nvim",
   opts = {
@@ -42,18 +38,6 @@ return {
         { "progress",  separator = "",                   padding = { left = 2, right = 1 } },
         { "location",  padding = { left = 1, right = 1 } },
       },
-    },
-    winbar = {
-      lualine_a = {},
-      lualine_b = {},
-      lualine_c = {
-        { "filetype",                                  icon_only = true, separator = "", padding = { left = 1, right = 0 } },
-        { LazyVim.lualine.pretty_path({ length = 20 }) },
-        { navicLocation },
-      },
-      lualine_x = {},
-      lualine_y = {},
-      lualine_z = {},
     },
   },
 }

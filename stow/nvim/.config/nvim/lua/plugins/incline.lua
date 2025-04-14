@@ -33,6 +33,17 @@ return {
           local filetype_icon, color = require("nvim-web-devicons").get_icon_color(filename)
 
           if props.focused == true then
+            local result = {
+              { filetype_icon,                               guifg = color },
+              { LazyVim.lualine.pretty_path({ length = 20 }) },
+            }
+            for _, item in ipairs(require("nvim-navic").get_data(props.buf) or {}) do
+              table.insert(result, {
+                { ' > ',     group = 'NavicSeparator' },
+                { item.icon, group = 'NavicIcons' .. item.type },
+                { item.name, group = 'NavicText' },
+              })
+            end
             local buffer = {
               { filetype_icon, guifg = color },
               { " " },
@@ -44,7 +55,8 @@ return {
             for _, buffer_ in ipairs(buffer) do
               table.insert(diagnostics, buffer_)
             end
-            return diagnostics
+            table.insert(result, diagnostics)
+            return result
           else
             return {
               { filetype_icon, guifg = color },
