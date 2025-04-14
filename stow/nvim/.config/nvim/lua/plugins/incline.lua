@@ -45,7 +45,8 @@ return {
           if props.focused == true then
             local result = {
               { filetype_icon, guifg = color },
-              path,
+              { " " },
+              { path,          guifg = color },
               { " " },
             }
             for _, item in ipairs(require("nvim-navic").get_data(props.buf) or {}) do
