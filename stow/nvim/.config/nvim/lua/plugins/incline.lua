@@ -22,6 +22,9 @@ end
 return {
   {
     'b0o/incline.nvim',
+    opts = {
+      width = "fill",
+    },
     config = function()
       require('incline').setup({
         debounce_threshold = { falling = 500, rising = 250 },
@@ -35,16 +38,16 @@ return {
           if props.focused == true then
             local result = {
               { filetype_icon, guifg = color },
-              -- { LazyVim.lualine.pretty_path({ length = 20 }) },
+              LazyVim.lualine.pretty_path({ length = 20 }),
               { " " },
             }
-            -- for _, item in ipairs(require("nvim-navic").get_data(props.buf) or {}) do
-            --   table.insert(result, {
-            --     { ' > ',     group = 'NavicSeparator' },
-            --     { item.icon, group = 'NavicIcons' .. item.type },
-            --     { item.name, group = 'NavicText' },
-            --   })
-            -- end
+            for _, item in ipairs(require("nvim-navic").get_data(props.buf) or {}) do
+              table.insert(result, {
+                { ' > ',     group = 'NavicSeparator' },
+                { item.icon, group = 'NavicIcons' .. item.type },
+                { item.name, group = 'NavicText' },
+              })
+            end
             local buffer = {
               { filetype_icon, guifg = color },
               { " " },
