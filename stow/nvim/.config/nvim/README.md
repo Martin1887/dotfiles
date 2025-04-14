@@ -19,6 +19,7 @@ This configuration adds some extensions and customizations:
 - neo-tree source selector winbar and mappings, navigation with
 `h` and `l` and modified untracked files highlight.
 - Customized lualine with words count, lines and count, encoding and filetype.
+- incline.nvim for custom minimal winbars with diagnostics for the active window.
 - relative-toggle.nvim to show relative numbers only in waiting events.
 - `<C-p>` mapping to pick buffer and `<space>bsd` and `<space>bse` to sort them
 by directory and extension.
