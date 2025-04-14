@@ -23,7 +23,9 @@ return {
   {
     'b0o/incline.nvim',
     opts = {
-      width = "fill",
+      window = {
+        width = "fill",
+      },
     },
     config = function()
       require('incline').setup({
@@ -38,7 +40,7 @@ return {
           if props.focused == true then
             local result = {
               { filetype_icon, guifg = color },
-              LazyVim.lualine.pretty_path({ length = 20 }),
+              -- LazyVim.lualine.pretty_path({ length = 20 }),
               { " " },
             }
             for _, item in ipairs(require("nvim-navic").get_data(props.buf) or {}) do
