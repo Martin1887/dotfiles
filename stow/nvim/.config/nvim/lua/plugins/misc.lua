@@ -174,4 +174,5 @@ return {
       },
     },
   },
+  { "PontusHanssen/pddl.vim" },
 }

@@ -55,3 +55,4 @@ file history view in new tab.
 - tint to tint inactive windows.
 - nvim-spider for subword and skipping punctuation `w,e,b,ge` movements.
 - nvim-rip-substitute at `<space>fs` for a modern search/replace with ripgrep and friendly syntax.
+- <https://github.com/PontusHanssen/pddl.vim> for PDDL syntax highlighting.
