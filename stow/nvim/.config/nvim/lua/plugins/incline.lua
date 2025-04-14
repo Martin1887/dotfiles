@@ -1,9 +1,10 @@
 local function get_diagnostic_label(props)
+  local lazyicons = require("lazyvim.config").icons
   local icons = {
-    Error = "",
-    Warn = "",
-    Info = "",
-    Hint = "",
+    Error = lazyicons.diagnostics.Error,
+    Warn = lazyicons.diagnostics.Warn,
+    Info = lazyicons.diagnostics.Info,
+    Hint = lazyicons.diagnostics.Hint,
   }
 
   local label = {}
@@ -32,12 +33,12 @@ return {
           local filetype_icon, color, _is_default = require("mini.icons").get("file", filename)
 
           local buffer = {
-            { filetype_icon, guifg = color },
+            { filetype_icon, hl = color },
             { " " },
             { filename,      gui = modified },
           }
 
-          if #diagnostics > 0 then
+          if #diagnostics > 0 and props.focused == true then
             table.insert(diagnostics, { "| ", guifg = "grey" })
           end
           for _, buffer_ in ipairs(buffer) do
