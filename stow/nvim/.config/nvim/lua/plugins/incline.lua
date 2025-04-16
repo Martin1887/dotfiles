@@ -49,12 +49,15 @@ return {
               { path,          guifg = color },
               { " " },
             }
-            for _, item in ipairs(require("nvim-navic").get_data(props.buf) or {}) do
+            for i, item in ipairs(require("nvim-navic").get_data(props.buf) or {}) do
               table.insert(result, {
                 { ' > ',     group = 'NavicSeparator' },
                 { item.icon, group = 'NavicIcons' .. item.type },
                 { item.name, group = 'NavicText' },
               })
+              if i >= 5 then
+                break
+              end
             end
             local buffer = {
               { filetype_icon, guifg = color },
