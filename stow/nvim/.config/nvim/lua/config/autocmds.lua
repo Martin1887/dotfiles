@@ -6,14 +6,6 @@
 vim.cmd("hi NeoTreeGitUntracked guifg=#eebb15")
 vim.cmd("hi NeoTreeGitUnstaged guifg=#DD8764")
 
--- conceal disabled by default in Markdown and LaTeX, it is not very useful in
--- TUI because many things are not correctly displayed
-vim.api.nvim_create_autocmd({ "FileType" }, {
-  pattern = { "markdown", "tex" },
-  callback = function()
-    vim.wo.conceallevel = 0
-  end,
-})
 -- set tabstop and shiftwidth=2 only for selected languages
 vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = { "*" },

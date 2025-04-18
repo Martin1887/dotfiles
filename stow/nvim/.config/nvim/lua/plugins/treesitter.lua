@@ -27,4 +27,5 @@ return {
       disable = {},
     },
   },
+  dependencies = { "OXY2DEV/markview.nvim" },
 }
