@@ -32,9 +32,9 @@ return {
         set = function(enabled)
           local m = require("markview")
           if enabled then
-            m.actions.enable()
-          else
             m.actions.disable()
+          else
+            m.actions.enable()
           end
         end,
       }):map("<leader>um")
