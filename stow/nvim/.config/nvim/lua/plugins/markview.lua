@@ -9,7 +9,7 @@ return {
     opts = {
       preview = {
         icon_provider = "mini",
-        filetypes = { "markdown", "quarto", "rmd", "typst", "norg", "rmd", "org", "codecompanion", "tex", "html", },
+        filetypes = { "markdown", "quarto", "rmd", "typst", "norg", "rmd", "org", "codecompanion" },
       },
     },
     config = function(_, opts)
@@ -32,9 +32,9 @@ return {
         set = function(enabled)
           local m = require("markview")
           if enabled then
-            m.enable()
+            m.actions.enable()
           else
-            m.disable()
+            m.actions.disable()
           end
         end,
       }):map("<leader>um")

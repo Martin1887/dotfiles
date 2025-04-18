@@ -57,4 +57,4 @@ file history view in new tab.
 - nvim-spider for subword and skipping punctuation `w,e,b,ge` movements.
 - nvim-rip-substitute at `<space>fs` for a modern search/replace with ripgrep and friendly syntax.
 - <https://github.com/PontusHanssen/pddl.vim> for PDDL syntax highlighting.
-- markview.nvim to render Markdown, LaTeX, HTML, Typst and more with editor for codeblocks instead of render-markdown.
+- markview.nvim to render Markdown, Typst and more (LaTeX and HTML not enabled in filetypes) with editor for codeblocks instead of render-markdown.
