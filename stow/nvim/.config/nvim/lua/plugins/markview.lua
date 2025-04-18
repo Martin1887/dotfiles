@@ -11,20 +11,23 @@ return {
         icon_provider = "mini",
         filetypes = { "markdown", "quarto", "rmd", "typst", "norg", "rmd", "org", "codecompanion", "tex", "html", },
       },
-      markdown = {
-        headings = require("markview.presets").headings.slanted,
-        horizontal_rules = require("markview.presets").horizontal_rules.thick,
-        tables = require("markview.presets").tables.rounded,
-      }
     },
     config = function(_, opts)
+      local presets = require("markview.presets");
+      require("markview").setup({
+        markdown = {
+          headings = require("markview.presets").headings.slanted,
+          horizontal_rules = require("markview.presets").horizontal_rules.thick,
+          tables = require("markview.presets").tables.rounded,
+        }
+      });
       require("markview").setup(opts)
       -- Add extra editor support
       require("markview.extras.editor").setup();
       Snacks.toggle({
         name = "Markview Render",
         get = function()
-          return require("markview").actions.__is_enabled
+          return require("markview").actions.__is_enabled()
         end,
         set = function(enabled)
           local m = require("markview")
