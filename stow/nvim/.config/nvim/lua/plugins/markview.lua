@@ -23,20 +23,6 @@ return {
       require("markview").setup(opts)
       -- Add extra editor support
       require("markview.extras.editor").setup();
-      Snacks.toggle({
-        name = "Markview Render",
-        get = function()
-          return require("markview").actions.__is_enabled()
-        end,
-        set = function(enabled)
-          local m = require("markview")
-          if enabled then
-            m.actions.disable()
-          else
-            m.actions.enable()
-          end
-        end,
-      }):map("<leader>um")
     end,
     dependencies = {
       "saghen/blink.cmp"
