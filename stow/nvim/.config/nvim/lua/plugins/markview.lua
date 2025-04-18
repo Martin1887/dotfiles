@@ -16,7 +16,7 @@ return {
       local presets = require("markview.presets");
       require("markview").setup({
         markdown = {
-          headings = require("markview.presets").headings.slanted,
+          headings = require("markview.presets").headings.glow,
           horizontal_rules = require("markview.presets").horizontal_rules.thick,
           tables = require("markview.presets").tables.rounded,
         }
