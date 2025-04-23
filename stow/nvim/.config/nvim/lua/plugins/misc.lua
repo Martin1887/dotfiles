@@ -70,7 +70,9 @@ return {
   {
     "akinsho/bufferline.nvim",
     opts = {
-      always_show_bufferline = true,
+      options = {
+        always_show_bufferline = true,
+      }
     }
   },
   -- resize using Alt+direction
