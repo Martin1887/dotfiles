@@ -67,6 +67,12 @@ return {
       { "<leader>bt", "<cmd>ScopeMoveBuf<cr>", desc = "Move buffer to another tab" }
     },
   },
+  {
+    "akinsho/bufferline.nvim",
+    opts = {
+      always_show_bufferline = true,
+    }
+  },
   -- resize using Alt+direction
   { "mrjones2014/smart-splits.nvim", lazy = false, version = ">=1.0.0" },
   {
