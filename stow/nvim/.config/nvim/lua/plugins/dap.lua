@@ -30,12 +30,12 @@ return {
         require("dap").adapters["codelldb"] = {
           type = "server",
           host = "localhost",
-          port = "${port}",
+          port = "15000",
           executable = {
             command = "codelldb",
             args = {
               "--port",
-              "${port}",
+              "15000",
             },
           },
         }
