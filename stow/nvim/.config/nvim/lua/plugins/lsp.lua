@@ -37,6 +37,7 @@ return {
             },
             ltex_ls = {
               path = "ltex-ls-plus",
+              logLevel = "severe",
             },
             completionEnabled = true,
             -- "edit", "save" or "manual"
