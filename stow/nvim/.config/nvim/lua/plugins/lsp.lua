@@ -14,7 +14,7 @@ return {
             load_langs = { "en-GB", "en-US", "es" }, -- a table <string> : languages for which dictionaries will be loaded
             init_check = true,                       -- boolean : whether to load dictionaries on startup
             path = vim.env.HOME .. "/.nvim/ltex",    -- string : path to store dictionaries. Relative path uses current working directory
-            log_level = "info",                      -- string : "none", "trace", "debug", "info", "warn", "error", "fatal"
+            log_level = "warn",                      -- string : "none", "trace", "debug", "info", "warn", "error", "fatal"
           })
         end,
         -- For programming languages harper is used instead, much faster
