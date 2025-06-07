@@ -39,9 +39,17 @@ return {
               path = "ltex-ls-plus",
               logLevel = "severe",
             },
+            java = {
+              maximumHeapSize = 8192,
+            },
+            sentenceCacheSize = 20000,
             completionEnabled = true,
             -- "edit", "save" or "manual"
             checkFrequency = "save",
+            clearDiagnosticsWhenClosingFile = false,
+            trace = {
+              server = "off",
+            }
           },
         },
       })
