@@ -76,7 +76,7 @@ return {
             end
             table.insert(result, { "  " })
             for _, diag_ in ipairs(diagnostics) do
-              table.insert(result, diag_)
+              table.insert(result, 1, diag_)
             end
             return result
           else
