@@ -40,7 +40,7 @@ return {
           borders = false,
           statusline = false,
           tabline = false,
-          winbar = false
+          winbar = true
         },
         render = function(props)
           local bufname = vim.api.nvim_buf_get_name(props.buf)
