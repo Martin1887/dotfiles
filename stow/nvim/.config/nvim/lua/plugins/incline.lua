@@ -71,20 +71,12 @@ return {
             --     break
             --   end
             -- end
-            local buffer = {
-              { filetype_icon, guifg = color },
-              { " " },
-              { filename,      guifg = color, gui = modified },
-            }
             if #diagnostics > 0 then
               table.insert(diagnostics, { "| ", guifg = "grey" })
             end
             table.insert(result, { "  " })
             for _, diag_ in ipairs(diagnostics) do
               table.insert(result, diag_)
-            end
-            for _, buffer_ in ipairs(buffer) do
-              table.insert(result, buffer_)
             end
             return result
           else
