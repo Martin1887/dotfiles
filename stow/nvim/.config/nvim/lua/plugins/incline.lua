@@ -25,6 +25,17 @@ return {
     config = function()
       require('incline').setup({
         debounce_threshold = { falling = 500, rising = 250 },
+        -- zen-mode integration
+        ignore = {
+          floating_wins = false,
+          wintypes = function(winid, wintype)
+            local zen = package.loaded['snacks'].zen
+            if zen.win and not zen.win.closed then
+              return winid ~= zen.win.win
+            end
+            return wintype ~= ''
+          end
+        },
         render = function(props)
           local bufname = vim.api.nvim_buf_get_name(props.buf)
           local filename = vim.fn.fnamemodify(bufname, ":t")
