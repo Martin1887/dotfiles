@@ -28,6 +28,7 @@ return {
             hint = icons.diagnostics.Hint,
           },
         },
+        { "navic", color_correction = "dynamic" },
       },
       lualine_y = {
         { "filetype",  icon_only = true,                 separator = "",                   padding = { left = 0, right = 1 } },

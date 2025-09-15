@@ -36,12 +36,6 @@ return {
             return wintype ~= ''
           end
         },
-        overlap = {
-          borders = false,
-          statusline = false,
-          tabline = false,
-          winbar = true
-        },
         render = function(props)
           local bufname = vim.api.nvim_buf_get_name(props.buf)
           local filename = vim.fn.fnamemodify(bufname, ":t")
@@ -66,16 +60,17 @@ return {
               { path,          guifg = color },
               { " " },
             }
-            for i, item in ipairs(require("nvim-navic").get_data(props.buf) or {}) do
-              table.insert(result, {
-                { ' > ',     group = 'NavicSeparator' },
-                { item.icon, group = 'NavicIcons' .. item.type },
-                { item.name, group = 'NavicText' },
-              })
-              if i >= 5 then
-                break
-              end
-            end
+            -- navic uses too much space, better positioned in lualine
+            -- for i, item in ipairs(require("nvim-navic").get_data(props.buf) or {}) do
+            --   table.insert(result, {
+            --     { ' > ',     group = 'NavicSeparator' },
+            --     { item.icon, group = 'NavicIcons' .. item.type },
+            --     { item.name, group = 'NavicText' },
+            --   })
+            --   if i >= 5 then
+            --     break
+            --   end
+            -- end
             local buffer = {
               { filetype_icon, guifg = color },
               { " " },
