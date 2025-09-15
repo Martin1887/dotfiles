@@ -36,6 +36,12 @@ return {
             return wintype ~= ''
           end
         },
+        overlap = {
+          borders = false,
+          statusline = false,
+          tabline = false,
+          winbar = false
+        },
         render = function(props)
           local bufname = vim.api.nvim_buf_get_name(props.buf)
           local filename = vim.fn.fnamemodify(bufname, ":t")
