@@ -58,7 +58,6 @@ return {
               { filetype_icon, guifg = color },
               { " " },
               { path,          guifg = color },
-              { " " },
             }
             -- navic uses too much space, better positioned in lualine
             -- for i, item in ipairs(require("nvim-navic").get_data(props.buf) or {}) do
@@ -72,9 +71,8 @@ return {
             --   end
             -- end
             if #diagnostics > 0 then
-              table.insert(diagnostics, { "| ", guifg = "grey" })
+              table.insert(result, 1, { " | ", guifg = "grey" })
             end
-            table.insert(result, { "  " })
             for _, diag_ in ipairs(diagnostics) do
               table.insert(result, 1, diag_)
             end
