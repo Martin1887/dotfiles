@@ -32,7 +32,7 @@ return {
 	color_scheme = "MaterialDark",
 	colors = {
 		selection_fg = "none",
-		selection_bg = "rgba(87% 26% 26% 40%)",
+		selection_bg = "rgba(87% 60% 15% 40%)",
 		cursor_border = "#d7bb15",
 		cursor_bg = "#d7bb15",
 		cursor_fg = "#000000",
