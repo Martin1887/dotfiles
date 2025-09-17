@@ -45,7 +45,43 @@ return {
 	hide_tab_bar_if_only_one_tab = true,
 	window_decorations = "NONE",
 	scrollback_lines = 20000,
-	font = wezterm.font("FiraCode Nerd Font Ret"),
 	warn_about_missing_glyphs = false,
   front_end = "WebGpu",
+	font = wezterm.font("FiraCode Nerd Font Ret"),
+  font_rules = {
+    {
+      intensity = 'Bold',
+      italic = true,
+      font = wezterm.font {
+        family = 'FiraCode Nerd Font',
+        weight = 'Bold',
+        style = 'Italic',
+      },
+    },
+    {
+      intensity = 'Bold',
+      italic = false,
+      font = wezterm.font {
+        family = 'FiraCode Nerd Font',
+        weight = 'Bold',
+      },
+    },
+    {
+      italic = true,
+      intensity = 'Half',
+      font = wezterm.font {
+        family = 'FiraCode Nerd Font',
+        weight = 'Regular',
+        style = 'Italic',
+      },
+    },
+    {
+      italic = false,
+      intensity = 'Half',
+      font = wezterm.font {
+        family = 'FiraCode Nerd Font',
+        weight = 'Regular',
+      },
+    },
+  }
 }
