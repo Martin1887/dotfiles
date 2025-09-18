@@ -9,7 +9,6 @@ return {
       "html",
       "javascript",
       "json",
-      "latex",
       "lua",
       "luap",
       "markdown",
@@ -27,10 +26,6 @@ return {
     rainbow = {
       enable = true,
       disable = {},
-    },
-    highlight = {
-      enable = true,
-      disable = { "latex" },
     },
   },
   dependencies = { "OXY2DEV/markview.nvim" },
