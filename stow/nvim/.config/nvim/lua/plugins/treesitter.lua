@@ -28,6 +28,10 @@ return {
       enable = true,
       disable = {},
     },
+    highlight = {
+      enable = true,
+      disable = { "latex" },
+    },
   },
   dependencies = { "OXY2DEV/markview.nvim" },
 }
