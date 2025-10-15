@@ -21,9 +21,8 @@ return {
     },
     sections = {
       lualine_y = {
-        { "filetype", icon_only = true, separator = "", padding = { left = 0, right = 1 } },
-        { "encoding" },
-        { "fileformat" },
+        { "fileformat", separator = "", padding = { left = 0, right = 0 } },
+        { "encoding", padding = { left = 0, right = 1 } },
         { getChars, separator = "|", padding = { left = 1, right = 1 } },
         { getWords, separator = "|", padding = { left = 1, right = 1 } },
         { getLines, separator = "", padding = { left = 1, right = 1 } },
