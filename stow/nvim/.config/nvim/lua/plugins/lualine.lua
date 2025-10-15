@@ -20,20 +20,6 @@ return {
       disabled_filetypes = { "neo-tree" }
     },
     sections = {
-      -- the path (with symbols navigation) is put in winbar instead
-      lualine_c = {
-        LazyVim.lualine.root_dir(),
-        {
-          "diagnostics",
-          symbols = {
-            error = icons.diagnostics.Error,
-            warn = icons.diagnostics.Warn,
-            info = icons.diagnostics.Info,
-            hint = icons.diagnostics.Hint,
-          },
-        },
-        { "navic", color_correction = "dynamic" },
-      },
       lualine_y = {
         { "filetype",  icon_only = true,                 separator = "",                   padding = { left = 0, right = 1 } },
         { "encoding" },
