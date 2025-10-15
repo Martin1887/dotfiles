@@ -39,7 +39,7 @@ vim.api.nvim_create_autocmd("FileType", {
 
 -- disable conceal in LaTeX files
 vim.api.nvim_create_autocmd({ "FileType" }, {
-  group = augroup("latex_conceal"),
+  group = vim.api.nvim_create_augroup("latex_conceal", { clear = true }),
   pattern = { "tex" },
   callback = function()
     vim.opt_local.conceallevel = 0
