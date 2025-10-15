@@ -36,3 +36,12 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
   desc = "Disable focus autoresize for FileType",
 })
+
+-- disable conceal in LaTeX files
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  group = augroup("latex_conceal"),
+  pattern = { "tex" },
+  callback = function()
+    vim.opt_local.conceallevel = 0
+  end,
+})
