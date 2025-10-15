@@ -1,15 +1,15 @@
 local icons = require("lazyvim.config").icons
 
 local function getChars()
-  return tostring(vim.fn.wordcount().chars) .. " chars"
+  return tostring(vim.fn.wordcount().chars) .. " ch"
 end
 
 local function getWords()
-  return tostring(vim.fn.wordcount().words) .. " words"
+  return tostring(vim.fn.wordcount().words) .. " w"
 end
 
 local function getLines()
-  return tostring(vim.fn.line("$")) .. " lines"
+  return tostring(vim.fn.line("$")) .. " l"
 end
 
 return {
