@@ -1,5 +1,3 @@
-local icons = require("lazyvim.config").icons
-
 local function getChars()
   return tostring(vim.fn.wordcount().chars) .. "c"
 end
@@ -22,7 +20,7 @@ return {
     sections = {
       lualine_y = {
         { "encoding", separator = "", padding = { left = 0, right = 1 } },
-        { "fileformat", padding = { left = 1, right = 1 } },
+        { "fileformat", separator = "", padding = { left = 1, right = 1 } },
         { getChars, separator = "|", padding = { left = 1, right = 1 } },
         { getWords, separator = "|", padding = { left = 1, right = 1 } },
         { getLines, separator = "", padding = { left = 1, right = 1 } },
