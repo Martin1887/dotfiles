@@ -100,11 +100,11 @@ return {
         harper_ls = {}
       },
       setup = {
-        ["ruff"] = function()
-          LazyVim.lsp.on_attach(function(client, _)
+        [ruff] = function()
+          Snacks.util.lsp.on({ name = ruff }, function(_, client)
             -- Enable hover instead of disabling it in favor of Pyright
             client.server_capabilities.hoverProvider = true
-          end, "ruff")
+          end)
         end,
       },
     },

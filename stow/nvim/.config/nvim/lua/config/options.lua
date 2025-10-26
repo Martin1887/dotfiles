@@ -22,7 +22,7 @@ vim.g.FerretMap = 0
 vim.go.winminwidth = 0
 
 -- ruff instead of pyright or basedpyright, it is not a supported value
--- but nwither are loaded in this way
+-- but neither are loaded in this way
 vim.g.lazyvim_python_lsp = "ruff"
 vim.g.lazyvim_python_ruff = "ruff"
 
