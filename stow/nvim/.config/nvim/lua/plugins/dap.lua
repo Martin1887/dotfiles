@@ -69,5 +69,9 @@ return {
         }
       end
     end,
+  },
+  {
+    "mfussenegger/nvim-dap-python",
+    enabled = false,
   }
 }
