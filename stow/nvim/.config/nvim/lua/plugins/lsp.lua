@@ -96,7 +96,11 @@ return {
             },
           },
         },
-        typos_lsp = {},
+        typos_lsp = {
+          init_options = {
+            diagnosticSeverity = "Error"
+          }
+        },
         harper_ls = {}
       },
       setup = {
