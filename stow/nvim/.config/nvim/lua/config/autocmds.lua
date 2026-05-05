@@ -45,3 +45,13 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
     vim.opt_local.conceallevel = 0
   end,
 })
+
+-- avoid infinite loops with infinite memory
+vim.api.nvim_create_autocmd('LspAttach', {
+  callback = function(args)
+    local client = vim.lsp.get_client_by_id(args.data.client_id)
+    if client and client.server_capabilities then
+      client.server_capabilities.semanticTokensProvider = nil
+    end
+  end,
+})
