@@ -1,3 +1,13 @@
+(deflocalkeys-linux
+  esc  1
+  quot 12
+  ¡    13
+  ñ    39
+  tild 40
+  ç    41
+  min  53
+)
+
 ;; Only one defsrc is allowed.
 ;;
 ;; defsrc defines the keys that will be intercepted by kanata. The order of the
@@ -5,10 +15,10 @@
 ;; have the same number of keys as defsrc. Any keys not listed in defsrc will
 ;; be passed straight to the operating system.
 (defsrc
-  grv  1    2    3    4    5    6    7    8    9    0    '    ¡    bspc
+  esc  1    2    3    4    5    6    7    8    9    0    quot ¡    bspc
   tab  q    w    e    r    t    y    u    i    o    p    [    ]
-  caps a    s    d    f    g    h    j    k    l    ñ    '    ç    ret
-  lsft z    x    c    v    b    n    m    ,    .    -    rsft
+  caps a    s    d    f    g    h    j    k    l    ñ    tild ç    ret
+  lsft z    x    c    v    b    n    m    ,    .    min  rsft
   lctl lmet lalt           spc            ralt menu rctl
 )
 
@@ -27,14 +37,14 @@
   @qw  XX   XX   XX   end  XX   XX   XX   XX   XX   home XX   XX   _
   _    XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   _    XX   XX   XX   pgup XX   left down up   rght XX   XX   XX   _
-  XX   XX   supr XX   XX   pgdw XX   XX   XX   XX   XX   XX
+  XX   XX   del  XX   XX   pgdn XX   XX   XX   XX   XX   XX
   lctl _    _              @qw            _    _    _
 )
 
 (deflayer ralt
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    up   _    _    _    _    _    _    _    supr _    _
-  _    left down rght _    _    home pgdw pgup end  _    _    _    _
+  _    _    up   _    _    _    _    _    _    _    del  _    _
+  _    left down rght _    _    home pgdn pgup end  _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _
   lctl _    _              _              _    _    _
 )
@@ -62,7 +72,7 @@
   qw (layer-switch qwerty)
 
   ;; ralt enables ralt layout
-  (defalias ral (layer-while-held ralt))
+  ral (layer-while-held ralt)
 
   ;; tap for tab, hold for ralt
   tab (tap-hold-press $tt $ht tab @ral)
@@ -73,4 +83,3 @@
   ;; tap for caps, hold for lctl
   ctl (tap-hold-press $tt $ht caps lctl)
 )
-
