@@ -39,10 +39,10 @@
 )
 
 (deflayer vi
-  @qw      XX   XX   XX   end  XX   XX   XX   XX   XX   home XX   XX   _
+  @qw      XX   XX   XX   end  XX   XX   XX   XX   XX   home XX   XX   bspc
   @tab     XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-  @cap     XX   XX   XX   pgdn XX   left down up   rght XX   XX   XX   _
-  XX   XX  XX   del  XX   XX   pgup XX   XX   XX   XX   XX   XX
+  @cap     XX   XX   XX   pgdn XX   left down up   rght XX   XX   XX   ret
+  lsft XX  XX   del  XX   XX   pgup XX   XX   XX   XX   XX   rsft
   lctl _    _              @qw            _    _    _
 )
 
