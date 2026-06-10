@@ -40,8 +40,8 @@
 
 (deflayer vi
   @qw      XX   XX   XX   end  XX   XX   XX   XX   XX   home XX   XX   _
-  _        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-  _        XX   XX   XX   pgdn XX   left down up   rght XX   XX   XX   _
+  @tab     XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  @cap     XX   XX   XX   pgdn XX   left down up   rght XX   XX   XX   _
   XX   XX  XX   del  XX   XX   pgup XX   XX   XX   XX   XX   XX
   lctl _    _              @qw            _    _    _
 )
