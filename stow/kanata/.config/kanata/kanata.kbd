@@ -1,7 +1,7 @@
 (defcfg process-unmapped-keys no)
 
 (deflocalkeys-linux
-  esc  41
+  deg  41
   quot 12
   ¡    13
   ñ    39
@@ -18,7 +18,7 @@
 ;; have the same number of keys as defsrc. Any keys not listed in defsrc will
 ;; be passed straight to the operating system.
 (defsrc
-  esc      1    2    3    4    5    6    7    8    9    0    quot ¡    bspc
+  deg      1    2    3    4    5    6    7    8    9    0    quot ¡    bspc
   tab      q    w    e    r    t    y    u    i    o    p    [    ]
   caps     a    s    d    f    g    h    j    k    l    ñ    tild ç    ret
   lsft <   z    x    c    v    b    n    m    ,    .    min  rsft
@@ -45,7 +45,7 @@
 )
 
 (deflayer ralt
-  XX        AG-1 AG-2 AG-3 AG-4 AG-5 AG-6 AG-7 AG-8 AG-9 AG-0 AG-quot XX _
+  AG-deg    AG-1 AG-2 AG-3 AG-4 AG-5 AG-6 AG-7 AG-8 AG-9 AG-0 AG-quot XX _
   XX        AG-q up   AG-e AG-r AG-t AG-y AG-u AG-i AG-o del  AG-[ AG-]
   XX        left down rght AG-f AG-g home pgdn pgup end  AG-ñ AG-tild AG-ç    _
   XX   AG-< AG-z AG-x AG-c AG-v AG-b AG-n AG-m AG-, AG-. AG-min _
