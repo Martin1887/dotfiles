@@ -43,10 +43,10 @@
 )
 
 (deflayer ralt
-  _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    up   _    _    _    _    _    _    _    del  _    _
-  _    left down rght _    _    home pgdn pgup end  _    _    _    _
-  _    _    _    _    _    _    _    _    _    _    _    _
+  XX   |    @    #    ~    ½    ¬    {    [    ]    }    \    XX   _
+  XX   @    up   €    ŧ    XX   ↓    →    ø    _    del  [    ]
+  XX   left down rght đ    ŋ    home pgdn pgup end  ~    {    }    _
+  XX   «    »    ¢    „    “    ”    µ    •    ·    _    _
   lctl _    _              _              _    _    _
 )
 
