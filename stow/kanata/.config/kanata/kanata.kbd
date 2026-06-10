@@ -1,3 +1,5 @@
+(defcfg process-unmapped-keys no)
+
 (deflocalkeys-linux
   esc  41
   quot 12
