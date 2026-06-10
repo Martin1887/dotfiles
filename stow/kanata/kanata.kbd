@@ -1,11 +1,12 @@
 (deflocalkeys-linux
-  esc  1
+  esc  41
   quot 12
   ¡    13
   ñ    39
   tild 40
-  ç    41
+  ç    43
   min  53
+  opts 127
 )
 
 ;; Only one defsrc is allowed.
@@ -19,18 +20,18 @@
   tab  q    w    e    r    t    y    u    i    o    p    [    ]
   caps a    s    d    f    g    h    j    k    l    ñ    tild ç    ret
   lsft z    x    c    v    b    n    m    ,    .    min  rsft
-  lctl lmet lalt           spc            ralt menu rctl
+  lctl lmet lalt           spc            ralt opts rctl
 )
 
 ;; The first layer defined is the layer that will be active by default when
 ;; kanata starts up. This layer is the standard QWERTY layout except for the
 ;; backtick/grave key (@grl) which is an alias for a tap-hold key.
 (deflayer qwerty
-  @grv 1    2    3    4    5    6    7    8    9    0    '    ¡    bspc
+  @grv 1    2    3    4    5    6    7    8    9    0    quot ¡    bspc
   @tab q    w    e    r    t    y    u    i    o    p    [    ]
-  @cap a    s    d    f    g    h    j    k    l    ñ    '    ç    ret
-  lsft z    x    c    v    b    n    m    ,    .    -    rsft
-  @ctl lmet lalt           spc            @ral menu rctl
+  @cap a    s    d    f    g    h    j    k    l    ñ    tild ç    ret
+  lsft z    x    c    v    b    n    m    ,    .    min  rsft
+  @ctl lmet lalt           spc            @ral opts rctl
 )
 
 (deflayer vi
