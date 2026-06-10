@@ -1,4 +1,7 @@
-(defcfg process-unmapped-keys no)
+(defcfg
+  process-unmapped-keys no
+  log-layer-changes no
+)
 
 (deflocalkeys-linux
   quot 12
