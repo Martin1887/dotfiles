@@ -24,7 +24,7 @@
   tab      q    w    e    r    t    y    u    i    o    p    [    ]
   caps     a    s    d    f    g    h    j    k    l    ñ    tild ç    ret
   lsft <   z    x    c    v    b    n    m    ,    .    min  rsft
-  lctl lmet lalt           spc            ralt opts rctl
+  lctl lmet lalt           spc           ralt opts rctl
 )
 
 ;; The first layer defined is the layer that will be active by default when
@@ -35,7 +35,7 @@
   @tab     q    w    e    r    t    y    u    i    o    p    [    ]
   @cap     a    s    d    f    g    h    j    k    l    ñ    tild ç    ret
   lsft <   z    x    c    v    b    n    m    ,    .    min  rsft
-  @ctl lmet lalt           spc            @ral opts rctl
+  @ctl lmet lalt           spc           @ral opts rctl
 )
 
 (deflayer vi
@@ -43,7 +43,7 @@
   @tab     XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   @cap     XX   XX   XX   pgdn XX   left down up   rght XX   XX   XX   ret
   lsft XX  XX   del  XX   XX   pgup XX   XX   XX   XX   XX   rsft
-  lctl _    _              @qw            _    _    _
+  lctl _    _              @qw           _    _    _
 )
 
 (deflayer ralt
@@ -51,7 +51,7 @@
   XX        AG-q up   AG-e AG-r AG-t AG-y AG-u AG-i AG-o del  AG-[ AG-]
   XX        left down rght AG-f AG-g home pgdn pgup end  AG-ñ AG-tild AG-ç    _
   XX   AG-< AG-z AG-x AG-c AG-v AG-b AG-n AG-m AG-, AG-. AG-min _
-  lctl _    _              _              _    _    _
+  lctl lmet lalt           _              _    _    _
 )
 
 ;; defvar is used to declare variables as arbitrary strings.
