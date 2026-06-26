@@ -23,6 +23,16 @@ return {
   require("blink.cmp").setup {
     sources = {
       providers = {
+        lsp = {
+          opts = {
+            max_items = 100
+          }
+        },
+        path = {
+          opts = {
+            max_items = 100
+          }
+        },
         snippets = {
           opts = {
             search_paths = { vim.fn.stdpath("config") .. "/snippets" },
