@@ -24,13 +24,11 @@ return {
     sources = {
       providers = {
         lsp = {
-          opts = {
-            max_items = 100
-          }
+          max_items = 100
         },
         path = {
           opts = {
-            max_items = 100
+            max_entries = 100
           }
         },
         snippets = {
