@@ -96,7 +96,6 @@ return {
             },
           },
         },
-        harper_ls = {}
       },
       setup = {
         ["ruff"] = function()
