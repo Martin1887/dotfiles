@@ -20,18 +20,18 @@ return {
   --     { "<leader>cpe", "<cmd>ScissorsEditSnippet<cr>",   desc = "Edit snippet" },
   --   },
   -- },
-  -- require("blink.cmp").setup {
-  --   sources = {
-  --     providers = {
-  --       snippets = {
-  --         opts = {
-  --           search_paths = { vim.fn.stdpath("config") .. "/snippets" },
-  --         },
-  --       }
-  --     }
-  --   },
-  --   keymap = {
-  --     preset = "super-tab"
-  --   }
-  -- }
+  require("blink.cmp").setup {
+    -- sources = {
+    --   providers = {
+    --     snippets = {
+    --       opts = {
+    --         search_paths = { vim.fn.stdpath("config") .. "/snippets" },
+    --       },
+    --     }
+    --   }
+    -- },
+    keymap = {
+      preset = "super-tab"
+    }
+  }
 }
