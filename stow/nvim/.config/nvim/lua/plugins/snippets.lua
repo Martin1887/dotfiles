@@ -32,6 +32,9 @@ return {
     -- },
     keymap = {
       preset = "super-tab"
+    },
+    sources = {
+      default = { "lsp", "path", "buffer" },
     }
   }
 }
