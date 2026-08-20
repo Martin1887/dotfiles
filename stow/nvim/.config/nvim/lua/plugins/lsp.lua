@@ -96,6 +96,12 @@ return {
             },
           },
         },
+        typos_lsp = {
+          init_options = {
+            diagnosticSeverity = "Error"
+          }
+        },
+        harper_ls = {}
       },
       setup = {
         ["ruff"] = function()
