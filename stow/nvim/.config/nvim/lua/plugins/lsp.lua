@@ -93,6 +93,9 @@ return {
               chktex = {
                 onOpenAndSave = true,
               },
+              diagnostics = {
+                ignoredPatterns = { "Unused" }
+              },
             },
           },
         },
