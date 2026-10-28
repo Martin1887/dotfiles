@@ -63,10 +63,6 @@ map(
   { desc = "Spider-ge", silent = true, noremap = true }
 )
 
--- GitGutter additional keymaps
-map("n", "[h", "<cmd>GitGutterPrevHunk<cr>", { desc = "Previous hunk (git change)", silent = true, noremap = true })
-map("n", "]h", "<cmd>GitGutterNextHunk<cr>", { desc = "Next hunk (git change)", silent = true, noremap = true })
-
 -- rustaceanvim
 map("n", "<leader>rd", "<cmd>RustLsp debuggables<cr>", { desc = "Rust debuggables", silent = true, noremap = true })
 map("n", "<leader>rrn", "<cmd>RustLsp runnables<cr>", { desc = "Rust runnables", silent = true, noremap = true })

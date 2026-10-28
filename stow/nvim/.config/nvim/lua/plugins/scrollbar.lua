@@ -1,40 +1,30 @@
 return {
   {
     "petertriho/nvim-scrollbar",
+    branch = "refactor/v2",
     opts = {
-      handle = {
-        blend = 0,
-      },
-      handlers = {
-        cursor = true,
-        diagnostic = true,
+      providers = {
         gitsigns = true,
-        handle = true,
-        search = true,
-        ale = false,
+      },
+      scrollbar = {
+        thumb = { blend = 10 },
+        preset = "intellij"
+        floats = {
+          snacks = { list = true, preview = true },
+          when = function(context)
+            return context.filetype == "lazy"
+          end,
+        },
       },
       marks = {
-        Search = { color = "#ee8715" },
+        Search = {
+          priority = 1,
+          highlight = { fg = "#ee8715", bold = true },
+        },
       },
     },
-  },
-  {
-    "lewis6991/gitsigns.nvim",
-    config = function()
-      require("gitsigns").setup()
-      require("scrollbar.handlers.gitsigns").setup()
-    end,
   },
   {
     "kevinhwang91/nvim-hlslens",
-    config = function()
-      -- require('hlslens').setup() is not required
-      require("scrollbar.handlers.search").setup({
-        -- hlslens config overrides, nvim and hop keymaps defaults are better
-      })
-    end,
-    dependencies = {
-      "petertriho/nvim-scrollbar",
-    },
   },
 }

@@ -39,7 +39,6 @@ by directory and extension.
 - nvim-scrollbar.
 - Minimal notifications in nvim-notify.
 - vim-illuminate.
-- vim-gitgutter.
 - diffview.nvim (`:DiffviewOpen`, `DiffviewFileHistory`): open git diff and
 file history view in new tab.
 - git-conflict.nvim for mappings and commands to solve and navigate conflicts.
