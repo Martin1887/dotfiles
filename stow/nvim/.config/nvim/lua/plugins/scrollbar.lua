@@ -7,7 +7,6 @@ return {
         gitsigns = true,
       },
       scrollbar = {
-        thumb = { blend = 10 },
         preset = "intellij",
         floats = {
           snacks = { list = true, preview = true },
