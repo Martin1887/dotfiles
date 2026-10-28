@@ -8,7 +8,7 @@ return {
       },
       scrollbar = {
         thumb = { blend = 10 },
-        preset = "intellij"
+        preset = "intellij",
         floats = {
           snacks = { list = true, preview = true },
           when = function(context)
