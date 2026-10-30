@@ -97,6 +97,8 @@ return {
               diagnostics = {
                 ignoredPatterns = { "Unused" }
               },
+              bibtexFormatter = "none",
+              latexFormatter = "none",
             },
           },
         },
