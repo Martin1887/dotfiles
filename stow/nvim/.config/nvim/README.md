@@ -28,7 +28,7 @@ by directory and extension.
 - Rust, clangd, Python, markdown
 (with markdown-preview disabled) and tex extras.
 - DAP, DAPUI and nvim-dap-virtual-text with mappings (DAP core extra).
-- vimtex and texlab (with cktex enabled on save) for LaTeX.
+- vimtex and badness for LaTeX.
 - ltex-ls-plus for text, Markdown and LaTeX files.
 - harper for grammar check in text and programming languages files.
 - typos-lsp.
