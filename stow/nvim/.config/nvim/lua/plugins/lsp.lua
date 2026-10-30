@@ -128,9 +128,6 @@ return {
         sh = { "shfmt" },
         c = { "uncrustify" },
         cpp = { "uncrustify" },
-        -- Markdown formatting is done by LSP by rumdl
-        ["markdown"] = {},
-        ["markdown.mdx"] = {},
       },
     },
   },

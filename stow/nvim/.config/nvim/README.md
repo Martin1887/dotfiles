@@ -25,8 +25,7 @@ This configuration adds some extensions and customizations:
 by directory and extension.
 - Legendary command-palette-like search with `<space>P`.
 - flash (the new LazyVim default) has replaced hop.nvim (it was replacing the original defaults leap and flit).
-- Rust, clangd, Python, markdown
-(with markdown-preview disabled) and tex extras.
+- Rust, clangd, Python, and tex extras.
 - DAP, DAPUI and nvim-dap-virtual-text with mappings (DAP core extra).
 - vimtex and badness for LaTeX.
 - ltex-ls-plus for text, Markdown and LaTeX files.
