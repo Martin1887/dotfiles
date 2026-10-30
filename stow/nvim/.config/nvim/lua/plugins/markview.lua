@@ -9,35 +9,32 @@ return {
     config = function(_, opts)
       local presets = require("markview.presets");
       require("markview").setup({
-        opts = {
-          preview = {
-            icon_provider = "mini",
-            filetypes = { "latex", "markdown", "quarto", "rmd", "tex", "typst", "norg", "rmd", "org", "codecompanion" },
-          },
-          html = {
-            enable = false,
-          },
-          latex = {
-            enable = true,
-          },
-          markdown = {
-            enable = true,
-            headings = presets.headings.numbered,
-            horizontal_rules = presets.horizontal_rules.thick,
-            tables = presets.tables.rounded,
-          },
-          markdown_inline = {
-            enable = true,
-          },
-          typst = {
-            enable = true,
-          },
-          yaml = {
-            enable = true,
-          },
+        preview = {
+          icon_provider = "mini",
+          filetypes = { "latex", "markdown", "quarto", "rmd", "tex", "typst", "norg", "rmd", "org", "codecompanion" },
+        },
+        html = {
+          enable = false,
+        },
+        latex = {
+          enable = true,
+        },
+        markdown = {
+          enable = true,
+          headings = presets.headings.numbered,
+          horizontal_rules = presets.horizontal_rules.thick,
+          tables = presets.tables.rounded,
+        },
+        markdown_inline = {
+          enable = true,
+        },
+        typst = {
+          enable = true,
+        },
+        yaml = {
+          enable = true,
         },
       });
-      require("markview").setup(opts)
       -- Add extra editor support
       require("markview.extras.editor").setup();
     end,
