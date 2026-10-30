@@ -88,6 +88,7 @@ return {
           },
         },
         marksman = { enabled = false },
+        texlab = { enabled = false },
         badness = {},
         rumdl = {},
         typos_lsp = {
