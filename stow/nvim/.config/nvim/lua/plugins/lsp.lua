@@ -87,6 +87,7 @@ return {
             },
           },
         },
+        marksman = { enabled = false },
         texlab = {
           settings = {
             texlab = {
@@ -99,6 +100,7 @@ return {
             },
           },
         },
+        rumdl = {},
         typos_lsp = {
           init_options = {
             diagnosticSeverity = "Error"
@@ -136,6 +138,9 @@ return {
         sh = { "shfmt" },
         c = { "uncrustify" },
         cpp = { "uncrustify" },
+        -- Markdown formatting is done by LSP by rumdl
+        markdown = {},
+        ["markdown.mdx"] = {},
       },
     },
   },
