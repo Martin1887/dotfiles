@@ -88,7 +88,18 @@ return {
           },
         },
         marksman = { enabled = false },
-        texlab = { enabled = false },
+        texlab = {
+          settings = {
+            texlab = {
+              chktex = {
+                onOpenAndSave = true,
+              },
+              diagnostics = {
+                ignoredPatterns = { "Unused" }
+              },
+            },
+          },
+        },
         badness = {},
         rumdl = {},
         typos_lsp = {

@@ -27,7 +27,7 @@ by directory and extension.
 - flash (the new LazyVim default) has replaced hop.nvim (it was replacing the original defaults leap and flit).
 - Rust, clangd, Python, and tex extras.
 - DAP, DAPUI and nvim-dap-virtual-text with mappings (DAP core extra).
-- vimtex and badness for LaTeX.
+- vimtex, texlab and badness for LaTeX.
 - ltex-ls-plus for text, Markdown and LaTeX files.
 - harper for grammar check in text and programming languages files.
 - typos-lsp.
