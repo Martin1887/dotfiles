@@ -139,7 +139,7 @@ return {
         c = { "uncrustify" },
         cpp = { "uncrustify" },
         -- Markdown formatting is done by LSP by rumdl
-        markdown = {},
+        ["markdown"] = {},
         ["markdown.mdx"] = {},
       },
     },
