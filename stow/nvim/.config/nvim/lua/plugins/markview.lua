@@ -18,6 +18,9 @@ return {
         },
         latex = {
           enable = true,
+          fonts = {
+            enable = false,
+          },
         },
         markdown = {
           enable = true,
