@@ -165,12 +165,3 @@ map(
   "<cmd>lua require('dapui').close()<cr>",
   { desc = "DAP UI close", silent = true, noremap = true }
 )
-
--- Ferret
-map("n", "<leader>Fa", "<Plug>(FerretAck)", { desc = "FerretAck", silent = true, noremap = true })
-map("n", "<leader>FA", "<Plug>(FerretLack)", { desc = "FerretLack", silent = true, noremap = true })
-map("n", "<leader>Fb", "<Plug>(FerretBack)", { desc = "FerretBack", silent = true, noremap = true })
-map("n", "<leader>FB", "<Plug>(FerretBlack)", { desc = "FerretBlack", silent = true, noremap = true })
-map("n", "<leader>Fq", "<Plug>(FerretQuack)", { desc = "FerretQuack", silent = true, noremap = true })
-map("n", "<leader>Fw", "<Plug>(FerretAckWord)", { desc = "FerretAckWord", silent = true, noremap = true })
-map("n", "<leader>Fr", "<Plug>(FerretAcks)", { desc = "FerretAcks", silent = true, noremap = true })

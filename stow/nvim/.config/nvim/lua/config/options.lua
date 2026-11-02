@@ -15,9 +15,6 @@ opt.shiftwidth = 4
 
 opt.colorcolumn = "80,90,100"
 
--- disable ferret auto mappings
-vim.g.FerretMap = 0
-
 -- this is needed to avoid focus.nvim error on loading sessions
 vim.go.winminwidth = 0
 

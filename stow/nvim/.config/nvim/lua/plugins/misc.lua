@@ -2,8 +2,6 @@ return {
   { "simnalamburt/vim-mundo" },
   -- new selection targets, like parentheses
   { "wellle/targets.vim" },
-  -- powerful find and replace
-  { "wincent/ferret" },
   -- :Abolish, :Subvert and coercion (text cases)
   { "tpope/vim-abolish" },
   { "tpope/vim-repeat" },

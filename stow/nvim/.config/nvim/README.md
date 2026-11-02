@@ -42,7 +42,6 @@ by directory and extension.
 file history view in new tab.
 - git-conflict.nvim for mappings and commands to solve and navigate conflicts.
 - targets.nvim (new selection targets, like parenthesis).
-- ferret (powerful find and replace).
 - vim-abolish (`:Abolish`, `:Subvert` and coercion).
 - vim-repeat (better dot operator).
 - splitjoin.vim (`gS` to split and `gJ` to join).
