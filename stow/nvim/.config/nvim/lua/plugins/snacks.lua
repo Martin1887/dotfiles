@@ -59,7 +59,7 @@ return {
       animate = {
         fps = 165,
       },
-      editor = {
+      explorer = {
         trash = false,
       },
       scroll = {
