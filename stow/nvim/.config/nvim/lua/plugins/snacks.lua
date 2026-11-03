@@ -99,6 +99,20 @@ return {
     },
     keys = {
       {
+        "<leader>e",
+        function()
+          Snacks.explorer({ cwd = LazyVim.root() })
+        end,
+        desc = "Explorer Snacks (root dir)",
+      },
+      {
+        "<leader>E",
+        function()
+          Snacks.explorer()
+        end,
+        desc = "Explorer Snacks (cwd)",
+      },
+      {
         "<leader>fe",
         function()
           Snacks.explorer({ cwd = LazyVim.root(), focus = "input", auto_close = true, layout = { preset = "default", preview = true } })
