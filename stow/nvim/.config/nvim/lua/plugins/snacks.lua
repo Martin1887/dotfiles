@@ -59,6 +59,9 @@ return {
       animate = {
         fps = 165,
       },
+      editor = {
+        trash = false,
+      },
       scroll = {
         animate = {
           duration = { step = 17, total = 510 },
@@ -95,8 +98,20 @@ return {
       },
     },
     keys = {
-      { "<leader><space>", false },
-      { "<leader>.",       false },
+      {
+        "<leader>fe",
+        function()
+          Snacks.explorer({ cwd = LazyVim.root(), focus = "input", auto_close = true, layout = { preset = "default", preview = true } })
+        end,
+        desc = "Explorer Snacks floating (root dir)",
+      },
+      {
+        "<leader>fE",
+        function()
+          Snacks.explorer({ focus = "input", auto_close = true, layout = { preset = "default", preview = true } })
+        end,
+        desc = "Explorer Snacks floating (cwd)",
+      },
     },
   }
 }
