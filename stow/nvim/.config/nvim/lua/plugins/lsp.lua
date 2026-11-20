@@ -109,7 +109,9 @@ return {
             diagnosticSeverity = "Error"
           }
         },
-        harper_ls = {}
+        harper_ls = {
+          dialect = "British"
+        }
       },
       setup = {
         ["ruff"] = function()
