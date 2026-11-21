@@ -26,8 +26,8 @@ return {
       }
     },
     keys = {
-      { "<leader>j",  function() require("scrollbar").jump() end,   desc = "Jump to a scrollbar mark" },
-      { "<leader>ss", function() require("scrollbar").glance() end, desc = "Scrollbar glance" },
+      { "<leader>j", function() require("scrollbar").jump() end,   desc = "Jump to a scrollbar mark" },
+      { "<leader>J", function() require("scrollbar").glance() end, desc = "Scrollbar glance picker" },
     }
   },
   {
