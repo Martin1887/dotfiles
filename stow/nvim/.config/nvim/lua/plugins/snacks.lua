@@ -56,16 +56,11 @@ return {
           }
         end,
       },
-      animate = {
-        fps = 165,
-      },
       explorer = {
         trash = false,
       },
       scroll = {
-        animate = {
-          duration = { step = 17, total = 510 },
-        }
+        enabled = false,
       },
       zen = {
         config = function(_, _)
