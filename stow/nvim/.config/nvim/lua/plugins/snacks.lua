@@ -60,7 +60,7 @@ return {
         trash = false,
       },
       scroll = {
-        enabled = false,
+        enabled = true,
       },
       zen = {
         config = function(_, _)
