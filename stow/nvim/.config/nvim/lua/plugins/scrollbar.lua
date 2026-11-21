@@ -9,7 +9,7 @@ return {
         thumb = { blend = 10, highlight = { bg = "#1F180B" } },
         preset = "intellij",
         floats = {
-          snacks = { preview = true },
+          snacks = { preview = true, zen = true },
           when = function(context)
             return context.filetype == "lazy"
           end,
