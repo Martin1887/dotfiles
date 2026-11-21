@@ -21,7 +21,14 @@ return {
           highlight = { fg = "#ee8715", bold = true },
         },
       },
+      glance = {
+        picker = "snacks",
+      }
     },
+    keys = {
+      { "<leader>j",  function() require("scrollbar").jump() end,   desc = "Jump to a scrollbar mark" },
+      { "<leader>ss", function() require("scrollbar").glance() end, desc = "Scrollbar glance" },
+    }
   },
   {
     "kevinhwang91/nvim-hlslens",
