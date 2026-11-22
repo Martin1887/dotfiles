@@ -1,6 +1,7 @@
 return {
   {
     "petertriho/nvim-scrollbar",
+    lazy = false,
     opts = {
       providers = {
         gitsigns = true,
